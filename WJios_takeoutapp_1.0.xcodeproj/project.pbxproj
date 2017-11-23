@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02A97851FC6F549007584FB /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A97831FC6F549007584FB /* Discover.storyboard */; };
+		A02A97881FC6F763007584FB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A97861FC6F763007584FB /* Home.storyboard */; };
+		A02A978B1FC6F7A7007584FB /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A97891FC6F7A7007584FB /* Order.storyboard */; };
+		A02A978E1FC6F7CD007584FB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A978C1FC6F7CD007584FB /* Profile.storyboard */; };
 		A08F68561FC56DF800C85170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08F68551FC56DF800C85170 /* AppDelegate.swift */; };
 		A08F685B1FC56DF800C85170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08F68591FC56DF800C85170 /* Main.storyboard */; };
 		A08F685E1FC56DF800C85170 /* WJios_takeoutapp_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A08F685C1FC56DF800C85170 /* WJios_takeoutapp_1_0.xcdatamodeld */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A02A97841FC6F549007584FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WJios_takeoutapp_1.0/Base.lproj/Discover.storyboard; sourceTree = SOURCE_ROOT; };
+		A02A97871FC6F763007584FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WJios_takeoutapp_1.0/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		A02A978A1FC6F7A7007584FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WJios_takeoutapp_1.0/Base.lproj/Order.storyboard; sourceTree = SOURCE_ROOT; };
+		A02A978D1FC6F7CD007584FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WJios_takeoutapp_1.0/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		A08F68521FC56DF800C85170 /* WJios_takeoutapp_1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJios_takeoutapp_1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08F68551FC56DF800C85170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A08F685A1FC56DF800C85170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +45,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A02A97711FC6F15D007584FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A02A97721FC6F174007584FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A08F68A71FC5C59300C85170 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A02A97731FC6F18B007584FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A02A97741FC6F1A8007584FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A02A97751FC6F1B0007584FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A02A97761FC6F1BA007584FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A02A97771FC6F1D6007584FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A02A97781FC6F1E0007584FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A02A97791FC6F1E6007584FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A02A977A1FC6F1EC007584FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A02A977B1FC6F1F4007584FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A02A977C1FC6F1FB007584FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A02A977D1FC6F206007584FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A02A977E1FC6F20C007584FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A02A977F1FC6F213007584FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A08F68491FC56DF800C85170 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +170,9 @@
 		A08F68541FC56DF800C85170 /* WJios_takeoutapp_1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				A02A97711FC6F15D007584FB /* Model */,
+				A02A97731FC6F18B007584FB /* View */,
+				A02A97721FC6F174007584FB /* Controller */,
 				A08F689A1FC5C3E000C85170 /* Profile */,
 				A08F68991FC5C3D900C85170 /* Order */,
 				A08F68981FC5C3CA00C85170 /* Discover */,
@@ -66,7 +183,6 @@
 				A08F68611FC56DF800C85170 /* LaunchScreen.storyboard */,
 				A08F68641FC56DF800C85170 /* Info.plist */,
 				A08F685C1FC56DF800C85170 /* WJios_takeoutapp_1_0.xcdatamodeld */,
-				A08F68A71FC5C59300C85170 /* MainViewController.swift */,
 			);
 			path = WJios_takeoutapp_1.0;
 			sourceTree = "<group>";
@@ -74,6 +190,10 @@
 		A08F68971FC5C3C400C85170 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A02A97861FC6F763007584FB /* Home.storyboard */,
+				A02A97741FC6F1A8007584FB /* Model */,
+				A02A97761FC6F1BA007584FB /* View */,
+				A02A97751FC6F1B0007584FB /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -81,6 +201,10 @@
 		A08F68981FC5C3CA00C85170 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				A02A97831FC6F549007584FB /* Discover.storyboard */,
+				A02A97791FC6F1E6007584FB /* Model */,
+				A02A97781FC6F1E0007584FB /* View */,
+				A02A97771FC6F1D6007584FB /* Controller */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -88,6 +212,10 @@
 		A08F68991FC5C3D900C85170 /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				A02A97891FC6F7A7007584FB /* Order.storyboard */,
+				A02A977C1FC6F1FB007584FB /* Model */,
+				A02A977B1FC6F1F4007584FB /* View */,
+				A02A977A1FC6F1EC007584FB /* Controller */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -95,6 +223,10 @@
 		A08F689A1FC5C3E000C85170 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A02A978C1FC6F7CD007584FB /* Profile.storyboard */,
+				A02A977F1FC6F213007584FB /* Model */,
+				A02A977E1FC6F20C007584FB /* View */,
+				A02A977D1FC6F206007584FB /* Controller */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -159,8 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A08F68631FC56DF800C85170 /* LaunchScreen.storyboard in Resources */,
+				A02A97881FC6F763007584FB /* Home.storyboard in Resources */,
 				A08F68601FC56DF800C85170 /* Assets.xcassets in Resources */,
+				A02A97851FC6F549007584FB /* Discover.storyboard in Resources */,
 				A08F685B1FC56DF800C85170 /* Main.storyboard in Resources */,
+				A02A978E1FC6F7CD007584FB /* Profile.storyboard in Resources */,
+				A02A978B1FC6F7A7007584FB /* Order.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +316,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A02A97831FC6F549007584FB /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A02A97841FC6F549007584FB /* Base */,
+			);
+			name = Discover.storyboard;
+			sourceTree = "<group>";
+		};
+		A02A97861FC6F763007584FB /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A02A97871FC6F763007584FB /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		A02A97891FC6F7A7007584FB /* Order.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A02A978A1FC6F7A7007584FB /* Base */,
+			);
+			name = Order.storyboard;
+			sourceTree = "<group>";
+		};
+		A02A978C1FC6F7CD007584FB /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A02A978D1FC6F7CD007584FB /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
 		A08F68591FC56DF800C85170 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

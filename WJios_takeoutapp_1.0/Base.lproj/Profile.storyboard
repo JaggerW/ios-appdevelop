@@ -21,7 +21,41 @@
                             <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Q3b-Mq-7y0" detailTextLabel="zMt-Ag-k7M" imageView="Ela-5U-ekV" rowHeight="95" style="IBUITableViewCellStyleSubtitle" translatesAutoresizingMaskIntoConstraints="NO" id="6UJ-lV-GJY">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB7-fr-xQL">
+                                    <rect key="frame" x="0.0" y="95" width="106" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="30F-ZT-Bba"/>
+                                        <constraint firstAttribute="width" constant="106" id="gNg-Hm-SKc"/>
+                                    </constraints>
+                                    <state key="normal" title="钱包"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbZ-ru-jup">
+                                    <rect key="frame" x="107" y="95" width="106" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="BqF-ZO-hqN"/>
+                                        <constraint firstAttribute="width" constant="106" id="oUl-Ug-hzw"/>
+                                    </constraints>
+                                    <state key="normal" title="优惠"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZr-AR-nNa">
+                                    <rect key="frame" x="214" y="95" width="106" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="dzc-Jb-AGx"/>
+                                    </constraints>
+                                    <state key="normal" title="积分"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7c-Db-iJd">
+                                    <rect key="frame" x="299" y="36" width="8" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="8BV-PH-YFm"/>
+                                        <constraint firstAttribute="width" constant="8" id="bUh-gb-uOE"/>
+                                    </constraints>
+                                    <state key="normal" image="checkout_arrow_right"/>
+                                </button>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Q3b-Mq-7y0" detailTextLabel="zMt-Ag-k7M" imageView="Ela-5U-ekV" rowHeight="95" style="IBUITableViewCellStyleSubtitle" translatesAutoresizingMaskIntoConstraints="NO" id="6UJ-lV-GJY">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6UJ-lV-GJY" id="eqy-iD-F4Z">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
@@ -49,32 +83,22 @@
                                     </tableViewCellContentView>
                                     <color key="backgroundColor" red="1" green="0.29730902777777779" blue="0.1332736545138889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCell>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB7-fr-xQL">
-                                    <rect key="frame" x="0.0" y="95" width="106" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="钱包"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbZ-ru-jup">
-                                    <rect key="frame" x="107" y="95" width="106" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="优惠"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZr-AR-nNa">
-                                    <rect key="frame" x="214" y="95" width="106" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="积分"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7c-Db-iJd">
-                                    <rect key="frame" x="299" y="36" width="8" height="22"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="checkout_arrow_right"/>
-                                </button>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="6UJ-lV-GJY" secondAttribute="trailing" id="NdC-OO-CLH"/>
+                                <constraint firstItem="IZr-AR-nNa" firstAttribute="top" secondItem="y7c-Db-iJd" secondAttribute="bottom" constant="37" id="04q-8j-t7T"/>
+                                <constraint firstItem="y7c-Db-iJd" firstAttribute="top" secondItem="mEL-Bu-1ji" secondAttribute="top" constant="36" id="6JO-PN-JAj"/>
+                                <constraint firstItem="IZr-AR-nNa" firstAttribute="leading" secondItem="xbZ-ru-jup" secondAttribute="trailing" constant="1" id="9jM-gO-Qdb"/>
+                                <constraint firstAttribute="bottom" secondItem="IZr-AR-nNa" secondAttribute="bottom" id="BGs-ik-2O5"/>
+                                <constraint firstItem="6UJ-lV-GJY" firstAttribute="top" secondItem="mEL-Bu-1ji" secondAttribute="top" id="JkO-d6-NWK"/>
+                                <constraint firstItem="6UJ-lV-GJY" firstAttribute="leading" secondItem="mEL-Bu-1ji" secondAttribute="leading" id="QNa-lb-IXn"/>
+                                <constraint firstAttribute="bottom" secondItem="sB7-fr-xQL" secondAttribute="bottom" id="h2B-Pd-bdY"/>
+                                <constraint firstAttribute="bottom" secondItem="xbZ-ru-jup" secondAttribute="bottom" id="hfJ-dv-XBK"/>
+                                <constraint firstItem="sB7-fr-xQL" firstAttribute="leading" secondItem="mEL-Bu-1ji" secondAttribute="leading" id="lQS-kG-Qcc"/>
+                                <constraint firstItem="xbZ-ru-jup" firstAttribute="leading" secondItem="sB7-fr-xQL" secondAttribute="trailing" constant="1" id="mC4-db-wwo"/>
+                                <constraint firstAttribute="trailing" secondItem="y7c-Db-iJd" secondAttribute="trailing" constant="13" id="obw-VU-pb5"/>
+                                <constraint firstAttribute="trailing" secondItem="IZr-AR-nNa" secondAttribute="trailing" id="pgt-y2-nn8"/>
+                                <constraint firstItem="sB7-fr-xQL" firstAttribute="top" secondItem="6UJ-lV-GJY" secondAttribute="bottom" id="uUt-3M-BzI"/>
+                                <constraint firstAttribute="trailing" secondItem="6UJ-lV-GJY" secondAttribute="trailing" id="vPc-OI-pgU"/>
                             </constraints>
                         </view>
                         <sections>
@@ -207,7 +231,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cjd-w7-dJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1901" y="3165"/>
+            <point key="canvasLocation" x="-1901.25" y="3164.7887323943664"/>
         </scene>
         <!--我的-->
         <scene sceneID="WPu-PO-Iay">
@@ -219,6 +243,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dZg-ml-hO2">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="1" green="0.1960784314" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>

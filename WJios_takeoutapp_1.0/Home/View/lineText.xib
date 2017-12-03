@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="lineText" customModule="WJios_takeoutapp_1_0" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="vQe-Ah-OGa" id="tdd-NV-spR"/>
+                <outlet property="topview" destination="9cG-lj-Ih8" id="ZJI-4Z-Ed3"/>
+                <outlet property="view" destination="iN0-l3-epB" id="OS8-AH-fse"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cG-lj-Ih8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="0un-U0-tRl"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="附近商家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQe-Ah-OGa">
+                    <rect key="frame" x="9" y="18" width="69" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="baE-2O-F4a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vQe-Ah-OGa" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="9HW-UE-LdQ"/>
+                <constraint firstItem="vQe-Ah-OGa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="9" id="mnO-ws-iRD"/>
+                <constraint firstItem="9cG-lj-Ih8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qHh-JK-OFn"/>
+                <constraint firstItem="9cG-lj-Ih8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uZq-yY-Fw3"/>
+                <constraint firstItem="9cG-lj-Ih8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="z0X-rr-sTI"/>
+                <constraint firstItem="vQe-Ah-OGa" firstAttribute="top" secondItem="9cG-lj-Ih8" secondAttribute="bottom" constant="8" id="zHm-uf-d02"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="35" y="-259.5"/>
+        </view>
+    </objects>
+</document>

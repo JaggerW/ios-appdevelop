@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeHeaderCell" id="gTV-IL-0wX" customClass="HomeHeaderCollectionViewCell" customModule="WJios_takeoutapp_1_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美食" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcZ-Cg-rWU">
+                        <rect key="frame" x="19" y="55" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="aRY-B6-yfR"/>
+                            <constraint firstAttribute="height" constant="21" id="jFC-UL-Tys"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="widget_breakfast" translatesAutoresizingMaskIntoConstraints="NO" id="pwX-vj-AFU">
+                        <rect key="frame" x="17.5" y="9.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="2pa-x2-Afj"/>
+                            <constraint firstAttribute="height" constant="45" id="EwZ-KF-4Ic"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pwX-vj-AFU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="15S-Qa-IJZ"/>
+                <constraint firstItem="IcZ-Cg-rWU" firstAttribute="centerX" secondItem="pwX-vj-AFU" secondAttribute="centerX" id="FLu-1c-Xii"/>
+                <constraint firstItem="pwX-vj-AFU" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="HsG-Yu-kBv"/>
+                <constraint firstItem="IcZ-Cg-rWU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="55" id="Rym-jK-ZIt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="widget_breakfast" width="80" height="80"/>
+    </resources>
+</document>

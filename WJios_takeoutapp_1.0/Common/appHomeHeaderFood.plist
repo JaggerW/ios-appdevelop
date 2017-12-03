@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>label</key>
+		<string>早餐</string>
+		<key>icon</key>
+		<string>widget_breakfast</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>午餐</string>
+		<key>icon</key>
+		<string>widget_lunch</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>晚餐</string>
+		<key>icon</key>
+		<string>widget_night</string>
+	</dict>
+	<dict>
+		<key>label</key>
+		<string>茶点</string>
+		<key>icon</key>
+		<string>widget_tea</string>
+	</dict>
+</array>
+</plist>

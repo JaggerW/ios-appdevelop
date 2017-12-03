@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="discoverFoodCollectionCell" id="gTV-IL-0wX" customClass="FoodCollectionViewCell" customModule="WJios_takeoutapp_1_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="widget_lunch" translatesAutoresizingMaskIntoConstraints="NO" id="kNt-Xn-yWM">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kNt-Xn-yWM" secondAttribute="height" multiplier="1:1" id="v54-Jt-PY5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风味茄子" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2h-u5-Dzb">
+                        <rect key="frame" x="0.0" y="102" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="mjD-Kd-8xc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="去看看" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLM-Ee-968">
+                        <rect key="frame" x="5" y="139" width="90" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2mr-p0-hbh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.29730902780000001" blue="0.13327365450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6G-nd-wNp">
+                        <rect key="frame" x="0.0" y="120" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="W3u-j9-58f"/>
+                            <constraint firstAttribute="width" constant="42" id="xXz-4Q-2Vh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
+                        <color key="textColor" red="1" green="0.29730902780000001" blue="0.13327365450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="P2h-u5-Dzb" firstAttribute="top" secondItem="kNt-Xn-yWM" secondAttribute="bottom" constant="2" id="A98-JZ-uDe"/>
+                <constraint firstAttribute="trailing" secondItem="kNt-Xn-yWM" secondAttribute="trailing" id="G9T-2q-o3F"/>
+                <constraint firstItem="M6G-nd-wNp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HeS-xk-99H"/>
+                <constraint firstAttribute="trailing" secondItem="DLM-Ee-968" secondAttribute="trailing" constant="5" id="Lbl-IG-yLV"/>
+                <constraint firstAttribute="trailing" secondItem="P2h-u5-Dzb" secondAttribute="trailing" id="PZg-Jp-0BS"/>
+                <constraint firstItem="DLM-Ee-968" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="RUD-NL-XfR"/>
+                <constraint firstItem="kNt-Xn-yWM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cfR-zd-mFq"/>
+                <constraint firstItem="kNt-Xn-yWM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nD7-yF-bpA"/>
+                <constraint firstAttribute="bottom" secondItem="DLM-Ee-968" secondAttribute="bottom" constant="10" id="nUL-cA-vg0"/>
+                <constraint firstItem="P2h-u5-Dzb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wDX-0X-Oxj"/>
+                <constraint firstItem="M6G-nd-wNp" firstAttribute="top" secondItem="kNt-Xn-yWM" secondAttribute="bottom" constant="20" id="xrd-XA-LVH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="100" height="169"/>
+            <connections>
+                <outlet property="foodImage" destination="kNt-Xn-yWM" id="Th0-EB-1HI"/>
+                <outlet property="foodName" destination="P2h-u5-Dzb" id="zTv-3a-kYJ"/>
+                <outlet property="foodPrice" destination="M6G-nd-wNp" id="o05-MJ-oUt"/>
+                <outlet property="getIn" destination="DLM-Ee-968" id="HXU-0M-BSP"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="113.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="widget_lunch" width="80" height="80"/>
+    </resources>
+</document>

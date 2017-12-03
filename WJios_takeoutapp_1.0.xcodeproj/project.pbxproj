@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A019C2971FCE5FBA00108D49 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019C2951FCE5FBA00108D49 /* TableViewCell.swift */; };
+		A019C2981FCE5FBA00108D49 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A019C2961FCE5FBA00108D49 /* TableViewCell.xib */; };
 		A02A97851FC6F549007584FB /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A97831FC6F549007584FB /* Discover.storyboard */; };
 		A02A97881FC6F763007584FB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A97861FC6F763007584FB /* Home.storyboard */; };
 		A02A978B1FC6F7A7007584FB /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A97891FC6F7A7007584FB /* Order.storyboard */; };
 		A02A978E1FC6F7CD007584FB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A978C1FC6F7CD007584FB /* Profile.storyboard */; };
+		A02A979B1FC7FACA007584FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A979A1FC7FACA007584FB /* HomeViewController.swift */; };
+		A084E7F71FCFDB6C0068D2F1 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084E7F61FCFDB6C0068D2F1 /* DiscoverTableViewController.swift */; };
+		A089E98F1FCED26E00215331 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089E98E1FCED26E00215331 /* OrderTableViewController.swift */; };
+		A089E9921FCED2AE00215331 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089E9901FCED2AE00215331 /* OrderTableViewCell.swift */; };
+		A089E9931FCED2AE00215331 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A089E9911FCED2AE00215331 /* OrderTableViewCell.xib */; };
 		A08F68561FC56DF800C85170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08F68551FC56DF800C85170 /* AppDelegate.swift */; };
 		A08F685B1FC56DF800C85170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08F68591FC56DF800C85170 /* Main.storyboard */; };
 		A08F685E1FC56DF800C85170 /* WJios_takeoutapp_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A08F685C1FC56DF800C85170 /* WJios_takeoutapp_1_0.xcdatamodeld */; };
 		A08F68601FC56DF800C85170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08F685F1FC56DF800C85170 /* Assets.xcassets */; };
 		A08F68631FC56DF800C85170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08F68611FC56DF800C85170 /* LaunchScreen.storyboard */; };
 		A08F68A81FC5C59300C85170 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08F68A71FC5C59300C85170 /* MainViewController.swift */; };
+		A0D9B0E81FCFEBF00001AD08 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0E61FCFEBF00001AD08 /* CollectionViewCell.swift */; };
+		A0D9B0E91FCFEBF00001AD08 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B0E71FCFEBF00001AD08 /* CollectionViewCell.xib */; };
+		A0D9B0EB1FCFF0400001AD08 /* DiscoverHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0EA1FCFF0400001AD08 /* DiscoverHeaderView.swift */; };
+		A0D9B0ED1FCFFC690001AD08 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0EC1FCFFC690001AD08 /* common.swift */; };
+		A0D9B0EF1FD0308C0001AD08 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0EE1FD0308C0001AD08 /* Banner.swift */; };
+		A0D9B0F21FD145280001AD08 /* HomeHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0F01FD145280001AD08 /* HomeHeaderCollectionViewCell.swift */; };
+		A0D9B0F31FD145290001AD08 /* HomeHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B0F11FD145280001AD08 /* HomeHeaderCollectionViewCell.xib */; };
+		A0D9B0F51FD148340001AD08 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0F41FD148340001AD08 /* HomeHeaderView.swift */; };
+		A0D9B0F71FD14F330001AD08 /* lineText.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B0F61FD14F330001AD08 /* lineText.xib */; };
+		A0D9B0F91FD151770001AD08 /* lineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0F81FD151770001AD08 /* lineText.swift */; };
+		A0D9B0FC1FD194C40001AD08 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0FA1FD194C40001AD08 /* DiscoverTableViewCell.swift */; };
+		A0D9B0FD1FD194C40001AD08 /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B0FB1FD194C40001AD08 /* DiscoverTableViewCell.xib */; };
+		A0D9B1001FD19B100001AD08 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0FE1FD19B100001AD08 /* FoodCollectionViewCell.swift */; };
+		A0D9B1011FD19B100001AD08 /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B0FF1FD19B100001AD08 /* FoodCollectionViewCell.xib */; };
+		A0D9B10C1FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B1081FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.m */; };
+		A0D9B10D1FD1A76D0001AD08 /* appHomeHeaderFood.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B1091FD1A76D0001AD08 /* appHomeHeaderFood.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A019C2951FCE5FBA00108D49 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A019C2961FCE5FBA00108D49 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A02A97841FC6F549007584FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WJios_takeoutapp_1.0/Base.lproj/Discover.storyboard; sourceTree = SOURCE_ROOT; };
 		A02A97871FC6F763007584FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WJios_takeoutapp_1.0/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		A02A978A1FC6F7A7007584FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WJios_takeoutapp_1.0/Base.lproj/Order.storyboard; sourceTree = SOURCE_ROOT; };
 		A02A978D1FC6F7CD007584FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = WJios_takeoutapp_1.0/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		A02A979A1FC7FACA007584FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A084E7F61FCFDB6C0068D2F1 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		A089E98E1FCED26E00215331 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		A089E9901FCED2AE00215331 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		A089E9911FCED2AE00215331 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		A08F68521FC56DF800C85170 /* WJios_takeoutapp_1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJios_takeoutapp_1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08F68551FC56DF800C85170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A08F685A1FC56DF800C85170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +62,24 @@
 		A08F68621FC56DF800C85170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A08F68641FC56DF800C85170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08F68A71FC5C59300C85170 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A0D9B0E61FCFEBF00001AD08 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A0D9B0E71FCFEBF00001AD08 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		A0D9B0EA1FCFF0400001AD08 /* DiscoverHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverHeaderView.swift; sourceTree = "<group>"; };
+		A0D9B0EC1FCFFC690001AD08 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		A0D9B0EE1FD0308C0001AD08 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		A0D9B0F01FD145280001AD08 /* HomeHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0D9B0F11FD145280001AD08 /* HomeHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		A0D9B0F41FD148340001AD08 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		A0D9B0F61FD14F330001AD08 /* lineText.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = lineText.xib; sourceTree = "<group>"; };
+		A0D9B0F81FD151770001AD08 /* lineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lineText.swift; sourceTree = "<group>"; };
+		A0D9B0FA1FD194C40001AD08 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		A0D9B0FB1FD194C40001AD08 /* DiscoverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverTableViewCell.xib; sourceTree = "<group>"; };
+		A0D9B0FE1FD19B100001AD08 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0D9B0FF1FD19B100001AD08 /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
+		A0D9B1081FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+OC_CALayer_Color.m"; sourceTree = "<group>"; };
+		A0D9B1091FD1A76D0001AD08 /* appHomeHeaderFood.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = appHomeHeaderFood.plist; sourceTree = "<group>"; };
+		A0D9B10A1FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+OC_CALayer_Color.h"; sourceTree = "<group>"; };
+		A0D9B10B1FD1A76D0001AD08 /* WJios_takeoutapp_1.0-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WJios_takeoutapp_1.0-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +111,7 @@
 		A02A97731FC6F18B007584FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0D9B0EE1FD0308C0001AD08 /* Banner.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -77,6 +126,8 @@
 		A02A97751FC6F1B0007584FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A02A97861FC6F763007584FB /* Home.storyboard */,
+				A02A979A1FC7FACA007584FB /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -84,6 +135,13 @@
 		A02A97761FC6F1BA007584FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A019C2951FCE5FBA00108D49 /* TableViewCell.swift */,
+				A019C2961FCE5FBA00108D49 /* TableViewCell.xib */,
+				A0D9B0F01FD145280001AD08 /* HomeHeaderCollectionViewCell.swift */,
+				A0D9B0F11FD145280001AD08 /* HomeHeaderCollectionViewCell.xib */,
+				A0D9B0F81FD151770001AD08 /* lineText.swift */,
+				A0D9B0F61FD14F330001AD08 /* lineText.xib */,
+				A0D9B0F41FD148340001AD08 /* HomeHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,6 +149,8 @@
 		A02A97771FC6F1D6007584FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A02A97831FC6F549007584FB /* Discover.storyboard */,
+				A084E7F61FCFDB6C0068D2F1 /* DiscoverTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,6 +158,13 @@
 		A02A97781FC6F1E0007584FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0D9B0E61FCFEBF00001AD08 /* CollectionViewCell.swift */,
+				A0D9B0E71FCFEBF00001AD08 /* CollectionViewCell.xib */,
+				A0D9B0EA1FCFF0400001AD08 /* DiscoverHeaderView.swift */,
+				A0D9B0FA1FD194C40001AD08 /* DiscoverTableViewCell.swift */,
+				A0D9B0FB1FD194C40001AD08 /* DiscoverTableViewCell.xib */,
+				A0D9B0FE1FD19B100001AD08 /* FoodCollectionViewCell.swift */,
+				A0D9B0FF1FD19B100001AD08 /* FoodCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +179,8 @@
 		A02A977A1FC6F1EC007584FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A02A97891FC6F7A7007584FB /* Order.storyboard */,
+				A089E98E1FCED26E00215331 /* OrderTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,6 +188,8 @@
 		A02A977B1FC6F1F4007584FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A089E9901FCED2AE00215331 /* OrderTableViewCell.swift */,
+				A089E9911FCED2AE00215331 /* OrderTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +204,7 @@
 		A02A977D1FC6F206007584FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A02A978C1FC6F7CD007584FB /* Profile.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +221,18 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A02A97971FC7C803007584FB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0D9B0EC1FCFFC690001AD08 /* common.swift */,
+				A0D9B1091FD1A76D0001AD08 /* appHomeHeaderFood.plist */,
+				A0D9B10A1FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.h */,
+				A0D9B1081FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.m */,
+				A0D9B10B1FD1A76D0001AD08 /* WJios_takeoutapp_1.0-Bridging-Header.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A08F68491FC56DF800C85170 = {
@@ -170,6 +254,7 @@
 		A08F68541FC56DF800C85170 /* WJios_takeoutapp_1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				A02A97971FC7C803007584FB /* Common */,
 				A02A97711FC6F15D007584FB /* Model */,
 				A02A97731FC6F18B007584FB /* View */,
 				A02A97721FC6F174007584FB /* Controller */,
@@ -190,7 +275,6 @@
 		A08F68971FC5C3C400C85170 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A02A97861FC6F763007584FB /* Home.storyboard */,
 				A02A97741FC6F1A8007584FB /* Model */,
 				A02A97761FC6F1BA007584FB /* View */,
 				A02A97751FC6F1B0007584FB /* Controller */,
@@ -201,7 +285,6 @@
 		A08F68981FC5C3CA00C85170 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				A02A97831FC6F549007584FB /* Discover.storyboard */,
 				A02A97791FC6F1E6007584FB /* Model */,
 				A02A97781FC6F1E0007584FB /* View */,
 				A02A97771FC6F1D6007584FB /* Controller */,
@@ -212,7 +295,6 @@
 		A08F68991FC5C3D900C85170 /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				A02A97891FC6F7A7007584FB /* Order.storyboard */,
 				A02A977C1FC6F1FB007584FB /* Model */,
 				A02A977B1FC6F1F4007584FB /* View */,
 				A02A977A1FC6F1EC007584FB /* Controller */,
@@ -223,7 +305,6 @@
 		A08F689A1FC5C3E000C85170 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				A02A978C1FC6F7CD007584FB /* Profile.storyboard */,
 				A02A977F1FC6F213007584FB /* Model */,
 				A02A977E1FC6F20C007584FB /* View */,
 				A02A977D1FC6F206007584FB /* Controller */,
@@ -263,6 +344,7 @@
 				TargetAttributes = {
 					A08F68511FC56DF800C85170 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -291,12 +373,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A08F68631FC56DF800C85170 /* LaunchScreen.storyboard in Resources */,
+				A019C2981FCE5FBA00108D49 /* TableViewCell.xib in Resources */,
+				A0D9B0FD1FD194C40001AD08 /* DiscoverTableViewCell.xib in Resources */,
+				A0D9B1011FD19B100001AD08 /* FoodCollectionViewCell.xib in Resources */,
 				A02A97881FC6F763007584FB /* Home.storyboard in Resources */,
+				A0D9B0F31FD145290001AD08 /* HomeHeaderCollectionViewCell.xib in Resources */,
 				A08F68601FC56DF800C85170 /* Assets.xcassets in Resources */,
+				A089E9931FCED2AE00215331 /* OrderTableViewCell.xib in Resources */,
+				A0D9B0E91FCFEBF00001AD08 /* CollectionViewCell.xib in Resources */,
 				A02A97851FC6F549007584FB /* Discover.storyboard in Resources */,
 				A08F685B1FC56DF800C85170 /* Main.storyboard in Resources */,
 				A02A978E1FC6F7CD007584FB /* Profile.storyboard in Resources */,
 				A02A978B1FC6F7A7007584FB /* Order.storyboard in Resources */,
+				A0D9B0F71FD14F330001AD08 /* lineText.xib in Resources */,
+				A0D9B10D1FD1A76D0001AD08 /* appHomeHeaderFood.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +397,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D9B0E81FCFEBF00001AD08 /* CollectionViewCell.swift in Sources */,
+				A019C2971FCE5FBA00108D49 /* TableViewCell.swift in Sources */,
+				A0D9B1001FD19B100001AD08 /* FoodCollectionViewCell.swift in Sources */,
 				A08F68A81FC5C59300C85170 /* MainViewController.swift in Sources */,
+				A0D9B0ED1FCFFC690001AD08 /* common.swift in Sources */,
 				A08F68561FC56DF800C85170 /* AppDelegate.swift in Sources */,
+				A0D9B0F91FD151770001AD08 /* lineText.swift in Sources */,
+				A0D9B10C1FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.m in Sources */,
+				A0D9B0EF1FD0308C0001AD08 /* Banner.swift in Sources */,
+				A089E9921FCED2AE00215331 /* OrderTableViewCell.swift in Sources */,
+				A0D9B0FC1FD194C40001AD08 /* DiscoverTableViewCell.swift in Sources */,
 				A08F685E1FC56DF800C85170 /* WJios_takeoutapp_1_0.xcdatamodeld in Sources */,
+				A0D9B0EB1FCFF0400001AD08 /* DiscoverHeaderView.swift in Sources */,
+				A089E98F1FCED26E00215331 /* OrderTableViewController.swift in Sources */,
+				A084E7F71FCFDB6C0068D2F1 /* DiscoverTableViewController.swift in Sources */,
+				A02A979B1FC7FACA007584FB /* HomeViewController.swift in Sources */,
+				A0D9B0F51FD148340001AD08 /* HomeHeaderView.swift in Sources */,
+				A0D9B0F21FD145280001AD08 /* HomeHeaderCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +451,7 @@
 				A02A978D1FC6F7CD007584FB /* Base */,
 			);
 			name = Profile.storyboard;
+			path = WJios_takeoutapp_1.0;
 			sourceTree = "<group>";
 		};
 		A08F68591FC56DF800C85170 /* Main.storyboard */ = {
@@ -479,12 +585,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WJios_takeoutapp_1.0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nju.WJios-takeoutapp-1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WJios_takeoutapp_1.0/Common/WJios_takeoutapp_1.0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -495,12 +604,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WJios_takeoutapp_1.0/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nju.WJios-takeoutapp-1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WJios_takeoutapp_1.0/Common/WJios_takeoutapp_1.0-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -45,6 +45,13 @@ class OrderTableViewController: UITableViewController {
         return 100
         
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("点击了：\(indexPath)")
+        let orderDetailVc = UIStoryboard(name: "OrderDetail", bundle: nil).instantiateInitialViewController()!
+        //let storeVc = StoreViewController()
+        self.navigationController?.pushViewController(orderDetailVc, animated: true)
+    }
 
 
 }

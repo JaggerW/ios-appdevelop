@@ -30,6 +30,7 @@ class HomeViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
         //tableView.register(TableViewCell.self, forCellReuseIdentifier: identifier)
         let tableViewCellNib = UINib(nibName: "TableViewCell", bundle: nil)
@@ -69,7 +70,7 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
         
     }
 
@@ -86,5 +87,11 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         return 140
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("点击了：\(indexPath)")
+        let storeVc = UIStoryboard(name: "Store", bundle: nil).instantiateInitialViewController()!
+        //let storeVc = StoreViewController()
+        self.navigationController?.pushViewController(storeVc, animated: true)
+    }
     
 }

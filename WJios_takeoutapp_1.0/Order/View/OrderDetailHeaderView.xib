@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="orderDetailHeaderViewID" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_scene_order_default" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-lO-Tl9">
+                    <rect key="frame" x="130" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Icn-wn-Gdh"/>
+                        <constraint firstAttribute="height" constant="60" id="mSK-EP-7Fj"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDb-6N-FbB">
+                    <rect key="frame" x="121" y="78" width="79" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="BrE-Ic-jcj"/>
+                        <constraint firstAttribute="width" constant="79" id="R6M-tB-Feg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="订单已完成">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnX-Y8-NJs">
+                    <rect key="frame" x="87.5" y="108" width="63" height="21"/>
+                    <color key="backgroundColor" red="0.37889312568876765" green="0.65214036130487296" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="G5C-fy-qIr"/>
+                        <constraint firstAttribute="width" constant="63" id="SAd-BE-Cii"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="再来一单">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QM8-sm-CxM">
+                    <rect key="frame" x="169.5" y="108" width="63" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="LlM-0r-RMp"/>
+                        <constraint firstAttribute="height" constant="21" id="jw7-Un-cDB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="点评">
+                        <color key="titleColor" red="0.3788931257" green="0.65214036129999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                            <color key="value" red="0.38039215686274508" green="0.65098039215686276" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-Fg-ND4">
+                    <rect key="frame" x="0.0" y="150" width="320" height="10"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="S8v-vo-BV0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lNa-lO-Tl9" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="FaA-tA-CKV"/>
+                <constraint firstItem="vg6-Fg-ND4" firstAttribute="top" secondItem="WnX-Y8-NJs" secondAttribute="bottom" constant="21" id="Jiu-mb-vZn"/>
+                <constraint firstItem="QM8-sm-CxM" firstAttribute="top" secondItem="MDb-6N-FbB" secondAttribute="bottom" constant="8" id="YdI-LX-JOb"/>
+                <constraint firstItem="MDb-6N-FbB" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="aQ9-kG-mYK"/>
+                <constraint firstItem="QM8-sm-CxM" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" constant="41" id="bvz-nN-igB"/>
+                <constraint firstItem="lNa-lO-Tl9" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="10" id="gP3-Et-OFk"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="vg6-Fg-ND4" secondAttribute="trailing" id="gbt-SE-Nj1"/>
+                <constraint firstItem="vg6-Fg-ND4" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="lKg-dU-Z9t"/>
+                <constraint firstItem="WnX-Y8-NJs" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" constant="-41" id="qXh-91-lqM"/>
+                <constraint firstItem="MDb-6N-FbB" firstAttribute="top" secondItem="lNa-lO-Tl9" secondAttribute="bottom" constant="8" id="u1R-DQ-eaw"/>
+                <constraint firstItem="WnX-Y8-NJs" firstAttribute="top" secondItem="MDb-6N-FbB" secondAttribute="bottom" constant="8" id="vjQ-Ay-AJn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="34" y="108.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_icon_scene_order_default" width="26" height="26"/>
+    </resources>
+</document>

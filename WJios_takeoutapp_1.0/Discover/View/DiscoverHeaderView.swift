@@ -16,6 +16,11 @@ private let lineSpace:CGFloat = 10
 private let scrollViewH:CGFloat = 120
 private let identifier = "discoverCell"
 
+//delegate
+protocol DiscoverCollectionViewDelegate: class {
+    func ClickItem(DiscoverView: DiscoverHeaderView,Index: Int)
+}
+
 class DiscoverHeaderView: UIView {
     
     
@@ -63,6 +68,9 @@ class DiscoverHeaderView: UIView {
         return footView
     }()
 
+    //MARK:- 定义属性
+    weak var delegate :DiscoverCollectionViewDelegate?
+    
     //MARK:- 自定义初始化函数
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -103,6 +111,11 @@ extension DiscoverHeaderView: UICollectionViewDataSource,UICollectionViewDelegat
         cell.bounds.size.width = (kScreenW - 1) / 2
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //通知代理
+        delegate?.ClickItem(DiscoverView: self, Index: indexPath.item)
     }
 
 }

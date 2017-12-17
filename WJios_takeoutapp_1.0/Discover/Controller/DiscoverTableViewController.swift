@@ -12,6 +12,14 @@ private let identifier = "tableviewCell"
 
 class DiscoverTableViewController: UITableViewController {
     
+    //MARK:- 懒加载
+    private lazy var headerView: DiscoverHeaderView = {
+        let rect = CGRect(x: 0, y: 0, width: kScreenW, height: 160 + 120 + 10)
+        let headerView = DiscoverHeaderView(frame: rect)
+        headerView.delegate = self
+        return headerView
+    }()
+    
     
     //MARK:- 系统回调函数
     override func viewDidLoad() {
@@ -52,6 +60,13 @@ class DiscoverTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 188
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("点击了：\(indexPath)")
+        let storeVc = UIStoryboard(name: "Store", bundle: nil).instantiateInitialViewController()!
+        //let storeVc = StoreViewController()
+        self.navigationController?.pushViewController(storeVc, animated: true)
+    }
 
 }
 
@@ -59,14 +74,24 @@ class DiscoverTableViewController: UITableViewController {
 extension DiscoverTableViewController{
     
     private func setupUI(){
-        //1. 设置headerview
-        setupHeaderView()
+        //1. 添加headerview
+        self.tableView.tableHeaderView = headerView
     }
     
-    private func setupHeaderView(){
-        let rect = CGRect(x: 0, y: 0, width: kScreenW, height: 160 + 120 + 10)
-        let headerview = DiscoverHeaderView(frame: rect)
-        self.tableView.tableHeaderView = headerview
+}
+
+//MARK:- 遵守headview的delegate
+extension DiscoverTableViewController: DiscoverCollectionViewDelegate{
+    func ClickItem(DiscoverView: DiscoverHeaderView, Index: Int) {
+        print(Index)
+        //弹出控制器
+        switch Index {
+        case 0:
+            let vc = CreditsViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            print("还没完成")
+        }
     }
     
     

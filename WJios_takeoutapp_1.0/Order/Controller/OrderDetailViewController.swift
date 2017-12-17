@@ -16,6 +16,9 @@ private let headerViewH: CGFloat = 160
 
 class OrderDetailViewController: UIViewController {
     
+    //定义属性
+    var message:Int = 0
+    
     //MARK:- 懒加载
     private lazy var collectionCell:OrderDetailCollectionViewCell = {
         let rect = CGRect(x: 10, y: 0, width: 300, height: 260)
@@ -83,14 +86,28 @@ extension OrderDetailViewController: UICollectionViewDelegate,UICollectionViewDa
     //设置collectionviewcell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: orderDetailCollectionViewCellID, for: indexPath) as! OrderDetailCollectionViewCell
+        cell.sectionNum = indexPath.row
         return cell
     }
     //设置headerview
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: orderDetailHeaderViewID, for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: orderDetailHeaderViewID, for: indexPath) as! OrderDetailHeaderView
+        header.delegate = self
+        
         //header.backgroundColor = UIColor.red
         return header
     }
+}
+
+//MARK:- 遵守headerview的delegate
+extension OrderDetailViewController: OrderDetailHeaderDelegate{
+    func ClickTheButton(headerView: OrderDetailHeaderView) {
+        print(message)
+        let storyBoard = UIStoryboard(name: "Store", bundle: nil)
+        let vc = storyBoard.instantiateInitialViewController()!
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
 }
 
 

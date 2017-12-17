@@ -8,11 +8,22 @@
 
 import UIKit
 
-class OrderDetailHeaderView: UICollectionReusableView {
+protocol OrderDetailHeaderDelegate : class {
+    func ClickTheButton(headerView: OrderDetailHeaderView)
+}
 
+class OrderDetailHeaderView: UICollectionReusableView {
+    
+    weak var delegate : OrderDetailHeaderDelegate?
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
+    @IBAction func AgainButton(_ sender: Any) {
+        //通知代理
+        delegate?.ClickTheButton(headerView: self)
+    }
 }

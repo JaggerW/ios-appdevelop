@@ -37,8 +37,10 @@ class OrderTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: identifier)
-        return cell!
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: identifier) as! OrderTableViewCell
+        cell.againButton.tag = indexPath.row
+        cell.delegate = self
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -48,13 +50,23 @@ class OrderTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("点击了：\(indexPath)")
-        let orderDetailVc = UIStoryboard(name: "OrderDetail", bundle: nil).instantiateInitialViewController()!
+        let orderDetailVc = UIStoryboard(name: "OrderDetail", bundle: nil).instantiateInitialViewController() as! OrderDetailViewController
         //let storeVc = StoreViewController()
+        orderDetailVc.message = indexPath.row
         self.navigationController?.pushViewController(orderDetailVc, animated: true)
     }
 
 
 }
 
+//MARK:- 实现cell的delegate
+extension OrderTableViewController: OrderTableViewCellDelegate{
+    func ClickTheButton(cellView: OrderTableViewCell, IndexRow: Int) {
+        print(IndexRow)
+        let storeVc = UIStoryboard(name: "Store", bundle: nil).instantiateInitialViewController()!
+                //let storeVc = StoreViewController()
+                self.navigationController?.pushViewController(storeVc, animated: true)
+    }
+}
 
 

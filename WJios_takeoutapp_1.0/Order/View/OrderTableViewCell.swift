@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol OrderTableViewCellDelegate : class {
+    func ClickTheButton(cellView: OrderTableViewCell,IndexRow: Int)
+}
+
 class OrderTableViewCell: UITableViewCell {
     
     @IBOutlet weak var storeImage: UIImageView!
@@ -16,8 +20,10 @@ class OrderTableViewCell: UITableViewCell {
     @IBOutlet weak var orderTimeDay: UILabel!
     @IBOutlet weak var orderTimeHour: UILabel!
     @IBOutlet weak var allCost: UILabel!
-    
     @IBOutlet weak var againButton: UIButton!
+    //定义属性
+    private var indexRow = 0
+    weak var delegate:OrderTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +37,8 @@ class OrderTableViewCell: UITableViewCell {
     }
     
     @IBAction func button(_ sender: Any) {
-        orderStatus.textColor = UIColor.blue
+        delegate?.ClickTheButton(cellView: self, IndexRow: againButton.tag)
     }
 }
+
+

@@ -12,6 +12,9 @@ private let kFooterH: CGFloat = 30
 
 class OrderDetailCollectionViewCell: UICollectionViewCell {
     
+    var sectionNum: Int = 0
+    
+    
     private lazy var detailTableView:UITableView = { [weak self] in
         let rect = (self?.contentView.bounds)!
         let tableView = UITableView(frame: rect)
@@ -41,6 +44,7 @@ class OrderDetailCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         setupUI()
+        print(sectionNum)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -57,6 +61,7 @@ class OrderDetailCollectionViewCell: UICollectionViewCell {
 extension OrderDetailCollectionViewCell{
     private func setupUI(){
         detailTableView.tableHeaderView = headerView
+        
         detailTableView.tableFooterView = footerView
         self.contentView.addSubview(detailTableView)
         
@@ -81,13 +86,6 @@ extension OrderDetailCollectionViewCell: UITableViewDelegate,UITableViewDataSour
         return cell!
         
     }
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: <#T##String#>)
-//        tableView.regi
-//    }
-//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        <#code#>
-//    }
     
 }
 

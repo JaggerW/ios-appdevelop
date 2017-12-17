@@ -14,4 +14,3 @@ let kStatusBarH:CGFloat = 20
 let kNavigationBarH:CGFloat = 44
 
 
-

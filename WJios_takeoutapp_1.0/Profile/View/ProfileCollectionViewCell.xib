@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="buttonCollectionViewCellID" id="gTV-IL-0wX" customClass="ProfileCollectionViewCell" customModule="WJios_takeoutapp_1_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="钱包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-Ox-A4A">
+                        <rect key="frame" x="32" y="32" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Lc7-Ha-nAB"/>
+                            <constraint firstAttribute="width" constant="42" id="SRN-05-R1N"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NV-3q-cxk">
+                        <rect key="frame" x="69.5" y="13" width="10" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="X2Q-BK-fr2"/>
+                            <constraint firstAttribute="height" constant="21" id="uKI-t6-F9d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="1" green="0.46325544347513459" blue="0.1606266838754149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8II-94-VG9">
+                        <rect key="frame" x="26.5" y="11.5" width="43" height="20"/>
+                        <attributedString key="attributedText">
+                            <fragment content="15.00">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.47748266769205228" blue="0.1728510600444203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="17" name=".SFNSText"/>
+                                    <font key="NSOriginalFont" size="17" name=".SFNSText"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8II-94-VG9" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="Dbk-ba-kaQ"/>
+                <constraint firstItem="buZ-Ox-A4A" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dfa-9w-QwP"/>
+                <constraint firstItem="8II-94-VG9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="-5" id="Eee-vQ-KzC"/>
+                <constraint firstItem="buZ-Ox-A4A" firstAttribute="top" secondItem="8II-94-VG9" secondAttribute="bottom" id="N19-hk-N2i"/>
+                <constraint firstItem="1NV-3q-cxk" firstAttribute="leading" secondItem="8II-94-VG9" secondAttribute="trailing" id="UDb-Nt-iGS"/>
+                <constraint firstItem="1NV-3q-cxk" firstAttribute="centerY" secondItem="8II-94-VG9" secondAttribute="centerY" constant="2" id="lvH-ou-o7J"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="141" height="72"/>
+            <connections>
+                <outlet property="nameLabel" destination="buZ-Ox-A4A" id="3Cm-jE-OfY"/>
+                <outlet property="numLabel" destination="8II-94-VG9" id="idL-RQ-EaR"/>
+                <outlet property="unitLabel" destination="1NV-3q-cxk" id="HKJ-HS-nJ5"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="65"/>
+        </collectionViewCell>
+    </objects>
+</document>

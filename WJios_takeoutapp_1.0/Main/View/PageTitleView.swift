@@ -77,6 +77,7 @@ extension PageTitleView{
             label.tag = index
             label.font = UIFont.systemFont(ofSize: 15.0)
             label.textColor = UIColor.darkGray
+            //label.backgroundColor = UIColor.white
             label.textAlignment = .center
             let labelX:CGFloat = labelW * CGFloat(index)
             label.frame = CGRect(x: labelX, y: labelY, width: labelW, height: labelH)

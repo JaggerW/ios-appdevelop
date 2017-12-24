@@ -107,6 +107,10 @@ extension OrderDetailViewController: OrderDetailHeaderDelegate{
         let vc = storyBoard.instantiateInitialViewController()!
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    func ClickCommentButton(headerView: OrderDetailHeaderView) {
+        let vc = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "CommentStoryBoardID")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 

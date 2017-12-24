@@ -88,6 +88,19 @@ extension DiscoverTableViewController: DiscoverCollectionViewDelegate{
         switch Index {
         case 0:
             let vc = CreditsViewController()
+            self.navigationItem.backBarButtonItem?.title = "积分兑换"
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = UIStoryboard(name: "Invitation", bundle: nil).instantiateInitialViewController() as! InvitationViewController
+            self.navigationItem.backBarButtonItem?.title = "推荐有奖"
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = PayViewController()
+            self.navigationItem.backBarButtonItem?.title = "生活缴费"
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 2:
+            let vc = GroupPurchaseViewController()
+            self.navigationItem.backBarButtonItem?.title = "团购"
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("还没完成")

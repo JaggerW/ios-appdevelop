@@ -10,6 +10,7 @@ import UIKit
 
 protocol OrderDetailHeaderDelegate : class {
     func ClickTheButton(headerView: OrderDetailHeaderView)
+    func ClickCommentButton(headerView: OrderDetailHeaderView)
 }
 
 class OrderDetailHeaderView: UICollectionReusableView {
@@ -22,8 +23,13 @@ class OrderDetailHeaderView: UICollectionReusableView {
         // Initialization code
     }
     
+    @IBAction func CommentButton(_ sender: Any) {
+        //通知代理
+        delegate?.ClickCommentButton(headerView: self)
+    }
     @IBAction func AgainButton(_ sender: Any) {
         //通知代理
         delegate?.ClickTheButton(headerView: self)
     }
 }
+

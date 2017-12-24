@@ -84,11 +84,30 @@ class ProflieViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (indexPath.section == 1) && (indexPath.row == 0){
+        
+        if (indexPath.section == 1) && (indexPath.row == 0) {
             let story = UIStoryboard(name: "Address", bundle: nil)
             let vc = story.instantiateInitialViewController() as! AddressViewController
+            self.navigationItem.backBarButtonItem?.title = "收货地址"
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        else if (indexPath.section == 2) && (indexPath.row == 1) {
+            let vc = UIStoryboard(name: "Invitation", bundle: nil).instantiateInitialViewController() as! InvitationViewController
+            self.navigationItem.backBarButtonItem?.title = "推荐有奖"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if (indexPath.section == 1) && (indexPath.row == 1) {
+            let vc = FavoriteTableViewController()
+            self.navigationItem.backBarButtonItem?.title = "我的收藏"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else if (indexPath.section == 2) && (indexPath.row == 0) {
+            let vc = UIStoryboard(name: "Service", bundle: nil).instantiateViewController(withIdentifier: "ServiceStoryBoardID") as! ServiceViewController
+            self.navigationItem.backBarButtonItem?.title = "我的客服"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        
     }
 
 }

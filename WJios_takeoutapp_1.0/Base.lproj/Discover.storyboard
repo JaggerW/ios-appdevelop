@@ -44,7 +44,7 @@
         <!--发现-->
         <scene sceneID="HBV-QB-MCF">
             <objects>
-                <navigationController id="USQ-YK-B2n" sceneMemberID="viewController">
+                <navigationController id="USQ-YK-B2n" customClass="CustomNavigationController" customModule="WJios_takeoutapp_1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="发现" image="tab_discovery" id="thC-TP-qFB">
                         <inset key="imageInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>

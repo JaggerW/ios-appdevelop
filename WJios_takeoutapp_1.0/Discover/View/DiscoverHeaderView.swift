@@ -68,6 +68,10 @@ class DiscoverHeaderView: UIView {
         return footView
     }()
 
+    private lazy var nameString: [String] = {
+        let string = ["积分兑换","推荐好友","团购","生活缴费"]
+        return string
+    }()
     //MARK:- 定义属性
     weak var delegate :DiscoverCollectionViewDelegate?
     
@@ -106,9 +110,10 @@ extension DiscoverHeaderView: UICollectionViewDataSource,UICollectionViewDelegat
     
    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! CollectionViewCell
         cell.bounds.size.height = 80
         cell.bounds.size.width = (kScreenW - 1) / 2
+        cell.activityLabel.text = nameString[indexPath.item]
         return cell
         
     }

@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0194FE81FE8EF76004B8859 /* InvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0194FE71FE8EF76004B8859 /* InvitationViewController.swift */; };
+		A0194FEA1FE8EF9E004B8859 /* Invitation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0194FE91FE8EF9E004B8859 /* Invitation.storyboard */; };
+		A0194FF01FE90238004B8859 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0194FEF1FE90238004B8859 /* PayViewController.swift */; };
+		A0194FF21FE90341004B8859 /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0194FF11FE90341004B8859 /* Pay.storyboard */; };
+		A0194FF61FE9052A004B8859 /* PhonePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0194FF51FE9052A004B8859 /* PhonePayViewController.swift */; };
+		A0194FF81FE9085B004B8859 /* PhoneFlowPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0194FF71FE9085B004B8859 /* PhoneFlowPayViewController.swift */; };
+		A0194FFA1FE9086F004B8859 /* ElecPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0194FF91FE9086E004B8859 /* ElecPayViewController.swift */; };
+		A0194FFC1FE9087D004B8859 /* NetPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0194FFB1FE9087D004B8859 /* NetPayViewController.swift */; };
+		A0194FFE1FEA5066004B8859 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0194FFD1FEA5066004B8859 /* NotificationTableViewController.swift */; };
+		A01950011FEA50DC004B8859 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0194FFF1FEA50DC004B8859 /* NotificationTableViewCell.swift */; };
+		A01950021FEA50DC004B8859 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01950001FEA50DC004B8859 /* NotificationTableViewCell.xib */; };
+		A01950041FEA5A53004B8859 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01950031FEA5A53004B8859 /* FavoriteTableViewController.swift */; };
+		A01950081FEB5EBF004B8859 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01950071FEB5EBF004B8859 /* ServiceViewController.swift */; };
+		A019500A1FEB6916004B8859 /* Service.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01950091FEB6916004B8859 /* Service.storyboard */; };
+		A01950101FEBA678004B8859 /* GroupPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019500F1FEBA678004B8859 /* GroupPurchaseViewController.swift */; };
+		A01950121FEBABC6004B8859 /* StoreVouchersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01950111FEBABC6004B8859 /* StoreVouchersViewController.swift */; };
+		A01950141FEBAC94004B8859 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01950131FEBAC94004B8859 /* OtherViewController.swift */; };
+		A01950171FEBB209004B8859 /* PreciousCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01950151FEBB209004B8859 /* PreciousCollectionViewCell.swift */; };
+		A01950181FEBB209004B8859 /* PreciousCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01950161FEBB209004B8859 /* PreciousCollectionViewCell.xib */; };
+		A019501E1FEBE7C5004B8859 /* PreciousTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019501D1FEBE7C5004B8859 /* PreciousTableViewController.swift */; };
+		A01950221FEBF515004B8859 /* Precious.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01950211FEBF515004B8859 /* Precious.storyboard */; };
+		A01950241FED33DE004B8859 /* CommentCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01950231FED33DE004B8859 /* CommentCaseViewController.swift */; };
+		A01950271FED426D004B8859 /* CommentCaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01950251FED426D004B8859 /* CommentCaseTableViewCell.swift */; };
+		A01950281FED426E004B8859 /* CommentCaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01950261FED426D004B8859 /* CommentCaseTableViewCell.xib */; };
 		A019C2971FCE5FBA00108D49 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A019C2951FCE5FBA00108D49 /* TableViewCell.swift */; };
 		A019C2981FCE5FBA00108D49 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A019C2961FCE5FBA00108D49 /* TableViewCell.xib */; };
 		A01C40381FD7CD0B00C42586 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01C40371FD7CD0B00C42586 /* UIBarButtonItem.swift */; };
@@ -100,6 +124,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0194FE71FE8EF76004B8859 /* InvitationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationViewController.swift; sourceTree = "<group>"; };
+		A0194FE91FE8EF9E004B8859 /* Invitation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Invitation.storyboard; sourceTree = "<group>"; };
+		A0194FEF1FE90238004B8859 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		A0194FF11FE90341004B8859 /* Pay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pay.storyboard; sourceTree = "<group>"; };
+		A0194FF51FE9052A004B8859 /* PhonePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePayViewController.swift; sourceTree = "<group>"; };
+		A0194FF71FE9085B004B8859 /* PhoneFlowPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFlowPayViewController.swift; sourceTree = "<group>"; };
+		A0194FF91FE9086E004B8859 /* ElecPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElecPayViewController.swift; sourceTree = "<group>"; };
+		A0194FFB1FE9087D004B8859 /* NetPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetPayViewController.swift; sourceTree = "<group>"; };
+		A0194FFD1FEA5066004B8859 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
+		A0194FFF1FEA50DC004B8859 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		A01950001FEA50DC004B8859 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		A01950031FEA5A53004B8859 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		A01950071FEB5EBF004B8859 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		A01950091FEB6916004B8859 /* Service.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Service.storyboard; sourceTree = "<group>"; };
+		A019500F1FEBA678004B8859 /* GroupPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPurchaseViewController.swift; sourceTree = "<group>"; };
+		A01950111FEBABC6004B8859 /* StoreVouchersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVouchersViewController.swift; sourceTree = "<group>"; };
+		A01950131FEBAC94004B8859 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		A01950151FEBB209004B8859 /* PreciousCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreciousCollectionViewCell.swift; sourceTree = "<group>"; };
+		A01950161FEBB209004B8859 /* PreciousCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreciousCollectionViewCell.xib; sourceTree = "<group>"; };
+		A019501D1FEBE7C5004B8859 /* PreciousTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreciousTableViewController.swift; sourceTree = "<group>"; };
+		A01950211FEBF515004B8859 /* Precious.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Precious.storyboard; sourceTree = "<group>"; };
+		A01950231FED33DE004B8859 /* CommentCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCaseViewController.swift; sourceTree = "<group>"; };
+		A01950251FED426D004B8859 /* CommentCaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCaseTableViewCell.swift; sourceTree = "<group>"; };
+		A01950261FED426D004B8859 /* CommentCaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCaseTableViewCell.xib; sourceTree = "<group>"; };
 		A019C2951FCE5FBA00108D49 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A019C2961FCE5FBA00108D49 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A01C40371FD7CD0B00C42586 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
@@ -207,6 +255,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0194FE31FE8ED8F004B8859 /* Invitation */ = {
+			isa = PBXGroup;
+			children = (
+				A0194FE61FE8EDCE004B8859 /* Model */,
+				A0194FE51FE8EDC7004B8859 /* View */,
+				A0194FE41FE8EDBD004B8859 /* Controller */,
+			);
+			path = Invitation;
+			sourceTree = "<group>";
+		};
+		A0194FE41FE8EDBD004B8859 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0194FE71FE8EF76004B8859 /* InvitationViewController.swift */,
+				A0194FE91FE8EF9E004B8859 /* Invitation.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0194FE51FE8EDC7004B8859 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0194FE61FE8EDCE004B8859 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0194FEB1FE901EA004B8859 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				A0194FEE1FE90216004B8859 /* Model */,
+				A0194FED1FE90212004B8859 /* View */,
+				A0194FEC1FE90203004B8859 /* Controller */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		A0194FEC1FE90203004B8859 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0194FEF1FE90238004B8859 /* PayViewController.swift */,
+				A0194FF11FE90341004B8859 /* Pay.storyboard */,
+				A0194FF51FE9052A004B8859 /* PhonePayViewController.swift */,
+				A0194FF71FE9085B004B8859 /* PhoneFlowPayViewController.swift */,
+				A0194FF91FE9086E004B8859 /* ElecPayViewController.swift */,
+				A0194FFB1FE9087D004B8859 /* NetPayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0194FED1FE90212004B8859 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0194FEE1FE90216004B8859 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A019500B1FEBA5ED004B8859 /* GroupPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				A019500E1FEBA64E004B8859 /* Model */,
+				A019500D1FEBA649004B8859 /* View */,
+				A019500C1FEBA641004B8859 /* Controller */,
+			);
+			path = GroupPurchase;
+			sourceTree = "<group>";
+		};
+		A019500C1FEBA641004B8859 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A019500F1FEBA678004B8859 /* GroupPurchaseViewController.swift */,
+				A01950111FEBABC6004B8859 /* StoreVouchersViewController.swift */,
+				A01950131FEBAC94004B8859 /* OtherViewController.swift */,
+				A019501D1FEBE7C5004B8859 /* PreciousTableViewController.swift */,
+				A01950211FEBF515004B8859 /* Precious.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A019500D1FEBA649004B8859 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A01950151FEBB209004B8859 /* PreciousCollectionViewCell.swift */,
+				A01950161FEBB209004B8859 /* PreciousCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A019500E1FEBA64E004B8859 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A02A97711FC6F15D007584FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +487,10 @@
 				A02A978C1FC6F7CD007584FB /* Profile.storyboard */,
 				A07DADC31FDFCB0900766A34 /* ProflieViewController.swift */,
 				A061191D1FE3B4FE00FBA791 /* SetUpTableViewController.swift */,
+				A0194FFD1FEA5066004B8859 /* NotificationTableViewController.swift */,
+				A01950031FEA5A53004B8859 /* FavoriteTableViewController.swift */,
+				A01950071FEB5EBF004B8859 /* ServiceViewController.swift */,
+				A01950091FEB6916004B8859 /* Service.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -344,6 +504,8 @@
 				A07DADCB1FDFD4A000766A34 /* ProfileTableHeaderView.xib */,
 				A07DADCD1FDFF53D00766A34 /* ProfileCollectionViewCell.swift */,
 				A07DADCE1FDFF53D00766A34 /* ProfileCollectionViewCell.xib */,
+				A0194FFF1FEA50DC004B8859 /* NotificationTableViewCell.swift */,
+				A01950001FEA50DC004B8859 /* NotificationTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -560,6 +722,8 @@
 		A08F68981FC5C3CA00C85170 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				A019500B1FEBA5ED004B8859 /* GroupPurchase */,
+				A0194FEB1FE901EA004B8859 /* Pay */,
 				A02A97791FC6F1E6007584FB /* Model */,
 				A02A97781FC6F1E0007584FB /* View */,
 				A02A97771FC6F1D6007584FB /* Controller */,
@@ -580,6 +744,7 @@
 		A08F689A1FC5C3E000C85170 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A0194FE31FE8ED8F004B8859 /* Invitation */,
 				A09F75AB1FE24E76005A9993 /* UserAndSecurity */,
 				A07DADE71FE1225100766A34 /* Credits */,
 				A07DADE11FE1211200766A34 /* Discount */,
@@ -626,6 +791,7 @@
 				A01C40411FD83B4200C42586 /* OrderFoodViewController.swift */,
 				A01C407B1FDA59AD00C42586 /* CommentViewController.swift */,
 				A01C40851FDAC70200C42586 /* DetailViewController.swift */,
+				A01950231FED33DE004B8859 /* CommentCaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -646,6 +812,8 @@
 				A01C40821FDA7C5500C42586 /* CommentTableViewCell.xib */,
 				A0893E501FDC05D800B0F8BC /* DetailTableViewCell.swift */,
 				A0893E511FDC05D800B0F8BC /* DetailTableViewCell.xib */,
+				A01950251FED426D004B8859 /* CommentCaseTableViewCell.swift */,
+				A01950261FED426D004B8859 /* CommentCaseTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -744,9 +912,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A055D0041FE25C5F00FC5B71 /* Address.storyboard in Resources */,
+				A0194FF21FE90341004B8859 /* Pay.storyboard in Resources */,
 				A07DADBC1FDD60F700766A34 /* OrderDetailTableFooterView.xib in Resources */,
 				A08F68631FC56DF800C85170 /* LaunchScreen.storyboard in Resources */,
 				A0893E531FDC05D800B0F8BC /* DetailTableViewCell.xib in Resources */,
+				A01950181FEBB209004B8859 /* PreciousCollectionViewCell.xib in Resources */,
 				A09F75B21FE2505F005A9993 /* User.storyboard in Resources */,
 				A07DADE01FE0F63600766A34 /* DealDetailTableViewCell.xib in Resources */,
 				A019C2981FCE5FBA00108D49 /* TableViewCell.xib in Resources */,
@@ -754,6 +924,8 @@
 				A07DADD01FDFF53D00766A34 /* ProfileCollectionViewCell.xib in Resources */,
 				A0D9B1011FD19B100001AD08 /* FoodCollectionViewCell.xib in Resources */,
 				A055D00B1FE2619F00FC5B71 /* AddressTableViewCell.xib in Resources */,
+				A0194FEA1FE8EF9E004B8859 /* Invitation.storyboard in Resources */,
+				A01950221FEBF515004B8859 /* Precious.storyboard in Resources */,
 				A0893E5D1FDCFFA200B0F8BC /* OrderDetailHeaderView.xib in Resources */,
 				A01C403A1FD7D3B000C42586 /* Store.storyboard in Resources */,
 				A02A97881FC6F763007584FB /* Home.storyboard in Resources */,
@@ -761,17 +933,20 @@
 				A07DADD21FE00C8800766A34 /* Wallet.storyboard in Resources */,
 				A01C407A1FD9481B00C42586 /* StoreHeaderView.xib in Resources */,
 				A0893E571FDCF75D00B0F8BC /* OrderDetail.storyboard in Resources */,
+				A01950021FEA50DC004B8859 /* NotificationTableViewCell.xib in Resources */,
 				A0D9B0F31FD145290001AD08 /* HomeHeaderCollectionViewCell.xib in Resources */,
 				A01C40801FDA5BEE00C42586 /* CommentHeaderView.xib in Resources */,
 				A07DADC81FDFD08600766A34 /* ProfileTableViewCell.xib in Resources */,
 				A08F68601FC56DF800C85170 /* Assets.xcassets in Resources */,
 				A07DADCC1FDFD4A000766A34 /* ProfileTableHeaderView.xib in Resources */,
+				A019500A1FEB6916004B8859 /* Service.storyboard in Resources */,
 				A089E9931FCED2AE00215331 /* OrderTableViewCell.xib in Resources */,
 				A0D9B0E91FCFEBF00001AD08 /* CollectionViewCell.xib in Resources */,
 				A01C40841FDA7C5500C42586 /* CommentTableViewCell.xib in Resources */,
 				A02A97851FC6F549007584FB /* Discover.storyboard in Resources */,
 				A01C40701FD9244900C42586 /* LeftTableViewCell.xib in Resources */,
 				A0893E611FDCFFD700B0F8BC /* OrderDetailCollectionViewCell.xib in Resources */,
+				A01950281FED426E004B8859 /* CommentCaseTableViewCell.xib in Resources */,
 				A08F685B1FC56DF800C85170 /* Main.storyboard in Resources */,
 				A02A978E1FC6F7CD007584FB /* Profile.storyboard in Resources */,
 				A02A978B1FC6F7A7007584FB /* Order.storyboard in Resources */,
@@ -795,19 +970,27 @@
 				A0893E601FDCFFD700B0F8BC /* OrderDetailCollectionViewCell.swift in Sources */,
 				A019C2971FCE5FBA00108D49 /* TableViewCell.swift in Sources */,
 				A0D9B1001FD19B100001AD08 /* FoodCollectionViewCell.swift in Sources */,
+				A01950081FEB5EBF004B8859 /* ServiceViewController.swift in Sources */,
 				A01C40421FD83B4300C42586 /* OrderFoodViewController.swift in Sources */,
 				A055D0071FE25CD900FC5B71 /* AddressViewController.swift in Sources */,
 				A08F68A81FC5C59300C85170 /* MainViewController.swift in Sources */,
 				A01C40401FD8109600C42586 /* UIColorExtension.swift in Sources */,
+				A0194FF81FE9085B004B8859 /* PhoneFlowPayViewController.swift in Sources */,
 				A01C40731FD9246300C42586 /* RightTableViewCell.swift in Sources */,
 				A01C40871FDAC70300C42586 /* DetailViewController.swift in Sources */,
+				A0194FF61FE9052A004B8859 /* PhonePayViewController.swift in Sources */,
 				A07DADDC1FE0F5FF00766A34 /* DealDetailViewController.swift in Sources */,
+				A01950241FED33DE004B8859 /* CommentCaseViewController.swift in Sources */,
 				A0D9B0ED1FCFFC690001AD08 /* common.swift in Sources */,
 				A07DADCF1FDFF53D00766A34 /* ProfileCollectionViewCell.swift in Sources */,
+				A01950141FEBAC94004B8859 /* OtherViewController.swift in Sources */,
 				A08F68561FC56DF800C85170 /* AppDelegate.swift in Sources */,
 				A01C40381FD7CD0B00C42586 /* UIBarButtonItem.swift in Sources */,
 				A07DADCA1FDFD48700766A34 /* ProfileTableHeaderView.swift in Sources */,
+				A01950041FEA5A53004B8859 /* FavoriteTableViewController.swift in Sources */,
+				A019501E1FEBE7C5004B8859 /* PreciousTableViewController.swift in Sources */,
 				A07DADE61FE121AE00766A34 /* DiscountViewController.swift in Sources */,
+				A0194FFC1FE9087D004B8859 /* NetPayViewController.swift in Sources */,
 				A0D9B0F91FD151770001AD08 /* lineText.swift in Sources */,
 				A0D9B10C1FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.m in Sources */,
 				A01C406F1FD9244800C42586 /* LeftTableViewCell.swift in Sources */,
@@ -816,30 +999,39 @@
 				A01C40781FD9473000C42586 /* StoreHeaderView.swift in Sources */,
 				A07DADEF1FE124D000766A34 /* DiscountCollectionViewCell.swift in Sources */,
 				A09793BB1FD6D8C600B1F3C9 /* StoreViewController.swift in Sources */,
+				A01950011FEA50DC004B8859 /* NotificationTableViewCell.swift in Sources */,
 				A0893E5C1FDCFFA200B0F8BC /* OrderDetailHeaderView.swift in Sources */,
 				A0D9B0EF1FD0308C0001AD08 /* Banner.swift in Sources */,
 				A07DADDF1FE0F63600766A34 /* DealDetailTableViewCell.swift in Sources */,
 				A089E9921FCED2AE00215331 /* OrderTableViewCell.swift in Sources */,
+				A01950101FEBA678004B8859 /* GroupPurchaseViewController.swift in Sources */,
 				A0D9B0FC1FD194C40001AD08 /* DiscoverTableViewCell.swift in Sources */,
+				A01950121FEBABC6004B8859 /* StoreVouchersViewController.swift in Sources */,
 				A07DADEC1FE122B600766A34 /* CreditsViewController.swift in Sources */,
 				A01C403E1FD80E2E00C42586 /* PageContentView.swift in Sources */,
 				A0893E521FDC05D800B0F8BC /* DetailTableViewCell.swift in Sources */,
 				A08F685E1FC56DF800C85170 /* WJios_takeoutapp_1_0.xcdatamodeld in Sources */,
 				A07DADF51FE168C400766A34 /* CreditsHeaderView.swift in Sources */,
+				A0194FFE1FEA5066004B8859 /* NotificationTableViewController.swift in Sources */,
 				A0D9B0EB1FCFF0400001AD08 /* DiscoverHeaderView.swift in Sources */,
 				A01C403C1FD7DD7A00C42586 /* PageTitleView.swift in Sources */,
+				A0194FFA1FE9086F004B8859 /* ElecPayViewController.swift in Sources */,
 				A055D00A1FE2619F00FC5B71 /* AddressTableViewCell.swift in Sources */,
 				A089E98F1FCED26E00215331 /* OrderTableViewController.swift in Sources */,
 				A07DADBE1FDD610E00766A34 /* OrderDetailTableFooterView.swift in Sources */,
 				A01C40831FDA7C5500C42586 /* CommentTableViewCell.swift in Sources */,
+				A0194FF01FE90238004B8859 /* PayViewController.swift in Sources */,
+				A01950171FEBB209004B8859 /* PreciousCollectionViewCell.swift in Sources */,
 				A061191E1FE3B4FE00FBA791 /* SetUpTableViewController.swift in Sources */,
 				A01C407C1FDA59AD00C42586 /* CommentViewController.swift in Sources */,
 				A0893E591FDCF79400B0F8BC /* OrderDetailViewController.swift in Sources */,
 				A07DADC71FDFD08600766A34 /* ProfileTableViewCell.swift in Sources */,
 				A084E7F71FCFDB6C0068D2F1 /* DiscoverTableViewController.swift in Sources */,
 				A02A979B1FC7FACA007584FB /* HomeViewController.swift in Sources */,
+				A01950271FED426D004B8859 /* CommentCaseTableViewCell.swift in Sources */,
 				A0D9B0F51FD148340001AD08 /* HomeHeaderView.swift in Sources */,
 				A07DADD61FE0150A00766A34 /* WalletViewController.swift in Sources */,
+				A0194FE81FE8EF76004B8859 /* InvitationViewController.swift in Sources */,
 				A01C40761FD9378200C42586 /* RightTableHeaderView.swift in Sources */,
 				A0893E551FDC1A8F00B0F8BC /* CustomNavigationController.swift in Sources */,
 				A0D9B0F21FD145280001AD08 /* HomeHeaderCollectionViewCell.swift in Sources */,

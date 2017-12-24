@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dx3-I4-TY9">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Invitation View Controller-->
+        <scene sceneID="aLC-eA-mRm">
+            <objects>
+                <viewController id="Dx3-I4-TY9" customClass="InvitationViewController" customModule="WJios_takeoutapp_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3JN-bs-W1h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sp_pop_newuser_gift_bg" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-2J-GFt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每邀请一个好友下单得5元现金" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29v-nX-FNj">
+                                <rect key="frame" x="43" y="274.5" width="235.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97156567260000004" green="0.27045239920000003" blue="0.084632118539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qoe-jY-5Gq">
+                                <rect key="frame" x="60" y="422" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.97156567260000004" green="0.27045239920000003" blue="0.084632118539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FlS-Ud-T6g"/>
+                                </constraints>
+                                <state key="normal" title="立即邀请">
+                                    <color key="titleColor" red="1" green="0.93417055753814715" blue="0.55303779270829856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIE-Lf-BUn">
+                                <rect key="frame" x="282" y="50" width="38" height="18"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39720676369863012" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="AfC-5B-6bf"/>
+                                    <constraint firstAttribute="width" constant="38" id="PA7-Jc-RSX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="规则">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jq2-7D-9z5" kind="push" id="RjI-Bz-fMx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="29v-nX-FNj" firstAttribute="centerX" secondItem="3JN-bs-W1h" secondAttribute="centerX" id="0Ev-YV-Kgu"/>
+                            <constraint firstItem="b9u-eI-Kuz" firstAttribute="trailing" secondItem="Qoe-jY-5Gq" secondAttribute="trailing" constant="60" id="FDc-Yc-yDY"/>
+                            <constraint firstItem="GIE-Lf-BUn" firstAttribute="trailing" secondItem="b9u-eI-Kuz" secondAttribute="trailing" id="S7v-Va-xMh"/>
+                            <constraint firstItem="Qoe-jY-5Gq" firstAttribute="top" secondItem="29v-nX-FNj" secondAttribute="bottom" constant="127" id="YBw-xg-ADO"/>
+                            <constraint firstItem="Qoe-jY-5Gq" firstAttribute="leading" secondItem="b9u-eI-Kuz" secondAttribute="leading" constant="60" id="fad-00-x1q"/>
+                            <constraint firstItem="GIE-Lf-BUn" firstAttribute="top" secondItem="b9u-eI-Kuz" secondAttribute="top" constant="30" id="uGy-Mk-qZ9"/>
+                            <constraint firstItem="29v-nX-FNj" firstAttribute="centerY" secondItem="3JN-bs-W1h" secondAttribute="centerY" id="zdm-4U-WYW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b9u-eI-Kuz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRC-5E-j6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.625" y="150"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JMX-DD-Pg5">
+            <objects>
+                <viewController id="jq2-7D-9z5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eRv-t4-1NS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="活动规则     （...省略一万字）" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XXL-7N-SYg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jeQ-jx-rn7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1ew-zF-nil"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVV-cc-urP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="150"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sp_pop_newuser_gift_bg" width="320" height="389"/>
+    </resources>
+</document>

@@ -105,6 +105,11 @@
 		A09793BB1FD6D8C600B1F3C9 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09793BA1FD6D8C500B1F3C9 /* StoreViewController.swift */; };
 		A09F75B01FE2503C005A9993 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09F75AF1FE2503C005A9993 /* UserTableViewController.swift */; };
 		A09F75B21FE2505F005A9993 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09F75B11FE2505F005A9993 /* User.storyboard */; };
+		A0B29F331FF27DA100EDF44F /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B29F321FF27DA100EDF44F /* ShoppingCart.swift */; };
+		A0B29F351FF27DD900EDF44F /* ShoppingCart.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B29F341FF27DD900EDF44F /* ShoppingCart.xib */; };
+		A0B29F381FF4BD3600EDF44F /* GoodsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B29F361FF4BD3500EDF44F /* GoodsListTableViewCell.swift */; };
+		A0B29F391FF4BD3700EDF44F /* GoodsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B29F371FF4BD3600EDF44F /* GoodsListTableViewCell.xib */; };
+		A0B29F3B1FF4D7B700EDF44F /* ShopCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B29F3A1FF4D7B600EDF44F /* ShopCartView.swift */; };
 		A0D9B0E81FCFEBF00001AD08 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0E61FCFEBF00001AD08 /* CollectionViewCell.swift */; };
 		A0D9B0E91FCFEBF00001AD08 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B0E71FCFEBF00001AD08 /* CollectionViewCell.xib */; };
 		A0D9B0EB1FCFF0400001AD08 /* DiscoverHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B0EA1FCFF0400001AD08 /* DiscoverHeaderView.swift */; };
@@ -121,9 +126,13 @@
 		A0D9B1011FD19B100001AD08 /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B0FF1FD19B100001AD08 /* FoodCollectionViewCell.xib */; };
 		A0D9B10C1FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B1081FD1A76D0001AD08 /* CALayer+OC_CALayer_Color.m */; };
 		A0D9B10D1FD1A76D0001AD08 /* appHomeHeaderFood.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0D9B1091FD1A76D0001AD08 /* appHomeHeaderFood.plist */; };
+		BF3A5BAB14D44939FBC06373 /* Pods_WJios_takeoutapp_1_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4694EDD6F6CD9C744E59C76E /* Pods_WJios_takeoutapp_1_0.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2ED76FC9FF2E4178A4FD736C /* Pods-WJios_takeoutapp_1.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJios_takeoutapp_1.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJios_takeoutapp_1.0/Pods-WJios_takeoutapp_1.0.release.xcconfig"; sourceTree = "<group>"; };
+		4694EDD6F6CD9C744E59C76E /* Pods_WJios_takeoutapp_1_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WJios_takeoutapp_1_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E676F0077AFE86E746A1E26 /* Pods-WJios_takeoutapp_1.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJios_takeoutapp_1.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJios_takeoutapp_1.0/Pods-WJios_takeoutapp_1.0.debug.xcconfig"; sourceTree = "<group>"; };
 		A0194FE71FE8EF76004B8859 /* InvitationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationViewController.swift; sourceTree = "<group>"; };
 		A0194FE91FE8EF9E004B8859 /* Invitation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Invitation.storyboard; sourceTree = "<group>"; };
 		A0194FEF1FE90238004B8859 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +233,11 @@
 		A09793BA1FD6D8C500B1F3C9 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		A09F75AF1FE2503C005A9993 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 		A09F75B11FE2505F005A9993 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		A0B29F321FF27DA100EDF44F /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		A0B29F341FF27DD900EDF44F /* ShoppingCart.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCart.xib; sourceTree = "<group>"; };
+		A0B29F361FF4BD3500EDF44F /* GoodsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsListTableViewCell.swift; sourceTree = "<group>"; };
+		A0B29F371FF4BD3600EDF44F /* GoodsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsListTableViewCell.xib; sourceTree = "<group>"; };
+		A0B29F3A1FF4D7B600EDF44F /* ShopCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCartView.swift; sourceTree = "<group>"; };
 		A0D9B0E61FCFEBF00001AD08 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A0D9B0E71FCFEBF00001AD08 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		A0D9B0EA1FCFF0400001AD08 /* DiscoverHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverHeaderView.swift; sourceTree = "<group>"; };
@@ -249,12 +263,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3A5BAB14D44939FBC06373 /* Pods_WJios_takeoutapp_1_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63576A0FDDA79AF0A835F2D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E676F0077AFE86E746A1E26 /* Pods-WJios_takeoutapp_1.0.debug.xcconfig */,
+				2ED76FC9FF2E4178A4FD736C /* Pods-WJios_takeoutapp_1.0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0194FE31FE8ED8F004B8859 /* Invitation */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,6 +592,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A062B6011FFE2DCA0096BCBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A07DADD71FE0F58100766A34 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -677,6 +708,8 @@
 			children = (
 				A08F68541FC56DF800C85170 /* WJios_takeoutapp_1.0 */,
 				A08F68531FC56DF800C85170 /* Products */,
+				63576A0FDDA79AF0A835F2D0 /* Pods */,
+				DDACE3F695DA3599403F6C83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -770,6 +803,7 @@
 			isa = PBXGroup;
 			children = (
 				A09793B71FD6D78000B1F3C9 /* Model */,
+				A062B6011FFE2DCA0096BCBF /* ViewModel */,
 				A09793B91FD6D79F00B1F3C9 /* View */,
 				A09793B81FD6D78900B1F3C9 /* Controller */,
 			);
@@ -814,6 +848,11 @@
 				A0893E511FDC05D800B0F8BC /* DetailTableViewCell.xib */,
 				A01950251FED426D004B8859 /* CommentCaseTableViewCell.swift */,
 				A01950261FED426D004B8859 /* CommentCaseTableViewCell.xib */,
+				A0B29F321FF27DA100EDF44F /* ShoppingCart.swift */,
+				A0B29F341FF27DD900EDF44F /* ShoppingCart.xib */,
+				A0B29F361FF4BD3500EDF44F /* GoodsListTableViewCell.swift */,
+				A0B29F371FF4BD3600EDF44F /* GoodsListTableViewCell.xib */,
+				A0B29F3A1FF4D7B600EDF44F /* ShopCartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -851,6 +890,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DDACE3F695DA3599403F6C83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4694EDD6F6CD9C744E59C76E /* Pods_WJios_takeoutapp_1_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -858,9 +905,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A08F68671FC56DF900C85170 /* Build configuration list for PBXNativeTarget "WJios_takeoutapp_1.0" */;
 			buildPhases = (
+				7A20D1AB593BECB130F5D166 /* [CP] Check Pods Manifest.lock */,
 				A08F684E1FC56DF800C85170 /* Sources */,
 				A08F684F1FC56DF800C85170 /* Frameworks */,
 				A08F68501FC56DF800C85170 /* Resources */,
+				3357B695FA061EE05F208EE5 /* [CP] Embed Pods Frameworks */,
+				7888376641E6474DC97E01D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -938,6 +988,7 @@
 				A01C40801FDA5BEE00C42586 /* CommentHeaderView.xib in Resources */,
 				A07DADC81FDFD08600766A34 /* ProfileTableViewCell.xib in Resources */,
 				A08F68601FC56DF800C85170 /* Assets.xcassets in Resources */,
+				A0B29F351FF27DD900EDF44F /* ShoppingCart.xib in Resources */,
 				A07DADCC1FDFD4A000766A34 /* ProfileTableHeaderView.xib in Resources */,
 				A019500A1FEB6916004B8859 /* Service.storyboard in Resources */,
 				A089E9931FCED2AE00215331 /* OrderTableViewCell.xib in Resources */,
@@ -949,6 +1000,7 @@
 				A01950281FED426E004B8859 /* CommentCaseTableViewCell.xib in Resources */,
 				A08F685B1FC56DF800C85170 /* Main.storyboard in Resources */,
 				A02A978E1FC6F7CD007584FB /* Profile.storyboard in Resources */,
+				A0B29F391FF4BD3700EDF44F /* GoodsListTableViewCell.xib in Resources */,
 				A02A978B1FC6F7A7007584FB /* Order.storyboard in Resources */,
 				A0D9B0F71FD14F330001AD08 /* lineText.xib in Resources */,
 				A0D9B10D1FD1A76D0001AD08 /* appHomeHeaderFood.plist in Resources */,
@@ -958,6 +1010,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3357B695FA061EE05F208EE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WJios_takeoutapp_1.0/Pods-WJios_takeoutapp_1.0-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJios_takeoutapp_1.0/Pods-WJios_takeoutapp_1.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7888376641E6474DC97E01D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJios_takeoutapp_1.0/Pods-WJios_takeoutapp_1.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A20D1AB593BECB130F5D166 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WJios_takeoutapp_1.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A08F684E1FC56DF800C85170 /* Sources */ = {
@@ -971,6 +1077,7 @@
 				A019C2971FCE5FBA00108D49 /* TableViewCell.swift in Sources */,
 				A0D9B1001FD19B100001AD08 /* FoodCollectionViewCell.swift in Sources */,
 				A01950081FEB5EBF004B8859 /* ServiceViewController.swift in Sources */,
+				A0B29F331FF27DA100EDF44F /* ShoppingCart.swift in Sources */,
 				A01C40421FD83B4300C42586 /* OrderFoodViewController.swift in Sources */,
 				A055D0071FE25CD900FC5B71 /* AddressViewController.swift in Sources */,
 				A08F68A81FC5C59300C85170 /* MainViewController.swift in Sources */,
@@ -981,6 +1088,7 @@
 				A0194FF61FE9052A004B8859 /* PhonePayViewController.swift in Sources */,
 				A07DADDC1FE0F5FF00766A34 /* DealDetailViewController.swift in Sources */,
 				A01950241FED33DE004B8859 /* CommentCaseViewController.swift in Sources */,
+				A0B29F3B1FF4D7B700EDF44F /* ShopCartView.swift in Sources */,
 				A0D9B0ED1FCFFC690001AD08 /* common.swift in Sources */,
 				A07DADCF1FDFF53D00766A34 /* ProfileCollectionViewCell.swift in Sources */,
 				A01950141FEBAC94004B8859 /* OtherViewController.swift in Sources */,
@@ -1016,6 +1124,7 @@
 				A0D9B0EB1FCFF0400001AD08 /* DiscoverHeaderView.swift in Sources */,
 				A01C403C1FD7DD7A00C42586 /* PageTitleView.swift in Sources */,
 				A0194FFA1FE9086F004B8859 /* ElecPayViewController.swift in Sources */,
+				A0B29F381FF4BD3600EDF44F /* GoodsListTableViewCell.swift in Sources */,
 				A055D00A1FE2619F00FC5B71 /* AddressTableViewCell.swift in Sources */,
 				A089E98F1FCED26E00215331 /* OrderTableViewController.swift in Sources */,
 				A07DADBE1FDD610E00766A34 /* OrderDetailTableFooterView.swift in Sources */,
@@ -1202,6 +1311,7 @@
 		};
 		A08F68681FC56DF900C85170 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E676F0077AFE86E746A1E26 /* Pods-WJios_takeoutapp_1.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1221,6 +1331,7 @@
 		};
 		A08F68691FC56DF900C85170 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED76FC9FF2E4178A4FD736C /* Pods-WJios_takeoutapp_1.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

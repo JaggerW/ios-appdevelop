@@ -10,6 +10,7 @@ import UIKit
 
 private let kTitleViewH: CGFloat = 40
 private let kHeaderViewH: CGFloat = 145
+private let kShoppingCartH: CGFloat = 60
 class StoreViewController: UIViewController {
     
     //MARK:- 懒加载
@@ -41,13 +42,6 @@ class StoreViewController: UIViewController {
         childVcs.append(OrderFoodViewController())
         childVcs.append(CommentViewController())
         childVcs.append(DetailViewController())
-//        let detailVc = UIStoryboard(name: "Detail", bundle: nil).instantiateInitialViewController()!
-//        childVcs.append(detailVc)
-//        for _ in 0..<1{
-//            let vc = UIViewController()
-//            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
-//            childVcs.append(vc)
-//        }
         
         let contentView = PageContentView(frame: frame, childVcs: childVcs, parentVc: self)
         contentView.delegate = self
@@ -56,18 +50,36 @@ class StoreViewController: UIViewController {
     
     //懒加载left、righttableview
     
+    //懒加载shopcartView
+    private lazy var shopCartView: ShopCartView = {
+        let view = ShopCartView(frame: self.view.bounds)
+        return view
+    }()
+    
+    
+    
     
     //MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
         // 设置UI
         setupUI()
+        // 注册通知
+        NotificationCenter.default.addObserver(self, selector: #selector(self.show(notification:)), name: Notification.Name("ShowView"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(hide), name: HideView, object: nil)
+       
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    deinit {
+        //记得移除通知监听
+        NotificationCenter.default.removeObserver(self)
     }
     
 }
@@ -88,6 +100,9 @@ extension StoreViewController{
         
         //4. 添加contentview
         view.addSubview(pageContentView)
+        
+        //5. 添加shopCartView
+        //view.addSubview(shopCartView)
         
     }
     
@@ -116,6 +131,18 @@ extension StoreViewController: PageContentViewDelegate{
         pageTitleView.setPageTitleView(lineOffsetX: lineOffsetX, newLabelIndex: newLabelIndex)
     }
 }
+
+extension StoreViewController{
+    @objc private func show(notification:NSNotification){
+        shopCartView.showView()
+    }
+    @objc private func hide(){
+        
+    }
+    
+    
+}
+
 
 
 

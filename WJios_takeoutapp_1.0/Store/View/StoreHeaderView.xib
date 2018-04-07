@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoreHeaderView" customModule="WJios_takeoutapp_1_0" customModuleProvider="target">
             <connections>
+                <outlet property="distributionSide" destination="ltB-yE-oSK" id="ujU-AB-C0U"/>
+                <outlet property="icon_activity1" destination="RPk-MH-LtP" id="Kz3-bd-UdL"/>
+                <outlet property="icon_activity2" destination="XOl-tp-8oE" id="lFh-KM-9jz"/>
+                <outlet property="icon_notice" destination="auf-gB-z3I" id="xtm-Hv-Kgz"/>
+                <outlet property="storeActivityLable1" destination="xa9-ME-0yg" id="ZVm-c3-Ilg"/>
+                <outlet property="storeActivityLable2" destination="ev1-xM-Ab6" id="ODf-X1-JTk"/>
+                <outlet property="storeBrief" destination="49r-gI-Zrp" id="Mrf-GC-4dX"/>
+                <outlet property="storeIcon" destination="O53-ll-oBp" id="vV3-qx-Fli"/>
+                <outlet property="storeName" destination="DFO-65-imO" id="qQW-xS-owB"/>
+                <outlet property="storeNotice" destination="4ha-hW-nyj" id="2Hb-L0-9wI"/>
+                <outlet property="store_icon" destination="2Au-I8-gTR" id="Z4f-0I-YKU"/>
                 <outlet property="view" destination="iN0-l3-epB" id="GVJ-HJ-u6d"/>
             </connections>
         </placeholder>
@@ -87,7 +98,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="limitActivity" translatesAutoresizingMaskIntoConstraints="NO" id="RPk-MH-LtP">
-                    <rect key="frame" x="16" y="108" width="42" height="13"/>
+                    <rect key="frame" x="28" y="108" width="42" height="13"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="13" id="KKR-hV-b7C"/>
                         <constraint firstAttribute="width" constant="42" id="hq8-4O-9mQ"/>
@@ -101,7 +112,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搞活动了！！！来搞事情啊！！！大甩卖啊！！！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa9-ME-0yg">
-                    <rect key="frame" x="68" y="104" width="204" height="21"/>
+                    <rect key="frame" x="80" y="104" width="192" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="cp9-rc-by6"/>
                     </constraints>
@@ -110,14 +121,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="limitActivity" translatesAutoresizingMaskIntoConstraints="NO" id="XOl-tp-8oE">
-                    <rect key="frame" x="16" y="127" width="42" height="13"/>
+                    <rect key="frame" x="28" y="127" width="42" height="13"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="13" id="6Fe-1Q-IaX"/>
                         <constraint firstAttribute="width" constant="42" id="rfy-Yo-Agy"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搞活动了！！！来搞事情啊！！！大甩卖啊！！！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ev1-xM-Ab6">
-                    <rect key="frame" x="68" y="123" width="204" height="21"/>
+                    <rect key="frame" x="80" y="123" width="192" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="QWn-0J-nTb"/>
                     </constraints>
@@ -160,13 +171,13 @@
                 <constraint firstItem="ltB-yE-oSK" firstAttribute="top" secondItem="49r-gI-Zrp" secondAttribute="bottom" constant="1" id="N98-Aq-Ptm"/>
                 <constraint firstItem="auf-gB-z3I" firstAttribute="top" secondItem="2Au-I8-gTR" secondAttribute="bottom" constant="4" id="QUw-IH-axd"/>
                 <constraint firstAttribute="trailing" secondItem="Wr1-dI-5mu" secondAttribute="trailing" constant="48" id="Suf-Yt-F8l"/>
-                <constraint firstItem="RPk-MH-LtP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Tnq-WC-Wd3"/>
+                <constraint firstItem="RPk-MH-LtP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="Tnq-WC-Wd3"/>
                 <constraint firstItem="2Au-I8-gTR" firstAttribute="top" secondItem="49r-gI-Zrp" secondAttribute="bottom" id="UlL-C3-Km0"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ev1-xM-Ab6" secondAttribute="trailing" constant="48" id="V5P-dC-wfT"/>
                 <constraint firstItem="Wr1-dI-5mu" firstAttribute="top" secondItem="4ha-hW-nyj" secondAttribute="bottom" constant="4" id="VZN-VC-xH4"/>
                 <constraint firstItem="xa9-ME-0yg" firstAttribute="top" secondItem="Wr1-dI-5mu" secondAttribute="bottom" constant="3.5" id="VdO-4T-y6k"/>
                 <constraint firstItem="WN0-4u-JMX" firstAttribute="top" secondItem="ClH-YC-fLc" secondAttribute="bottom" constant="76" id="XSo-Nm-bFJ"/>
-                <constraint firstItem="XOl-tp-8oE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Xx5-MZ-wt6"/>
+                <constraint firstItem="XOl-tp-8oE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="Xx5-MZ-wt6"/>
                 <constraint firstItem="DFO-65-imO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Ydz-3C-FFy"/>
                 <constraint firstItem="WN0-4u-JMX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ZBx-fC-856"/>
                 <constraint firstItem="4ha-hW-nyj" firstAttribute="leading" secondItem="auf-gB-z3I" secondAttribute="trailing" constant="8" id="bsM-7v-Hcr"/>

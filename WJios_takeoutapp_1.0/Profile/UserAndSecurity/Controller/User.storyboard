@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oaq-vY-c9a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oaq-vY-c9a">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,6 +30,9 @@
                                     <state key="normal" title="退出登录">
                                         <color key="titleColor" red="0.97156567260000004" green="0.27045239920000003" blue="0.084632118539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="checkOut:" destination="Oaq-vY-c9a" eventType="touchUpInside" id="lMi-g6-n2G"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -154,11 +157,11 @@
                                                         <constraint firstAttribute="height" constant="24" id="Rc1-BC-DHO"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="178****7657" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-iG-5OK">
-                                                    <rect key="frame" x="215" y="13" width="89" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17865197657" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-iG-5OK">
+                                                    <rect key="frame" x="210" y="13" width="94" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ODz-5k-ze8"/>
-                                                        <constraint firstAttribute="width" constant="89" id="h2S-q2-ngG"/>
+                                                        <constraint firstAttribute="width" constant="94" id="h2S-q2-ngG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -429,7 +432,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hko-RS-NsC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hko-RS-NsC">
                                         <rect key="frame" x="0.0" y="588" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hko-RS-NsC" id="HY8-Dk-STW">
@@ -473,6 +476,11 @@
                             <outlet property="delegate" destination="Oaq-vY-c9a" id="Oti-H6-OTF"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="userImage" destination="dQV-lO-4nC" id="OX5-i8-eNc"/>
+                        <outlet property="userName" destination="euW-tT-MJJ" id="tvv-1d-NNa"/>
+                        <outlet property="userTel" destination="Bw9-iG-5OK" id="ZUT-oK-wep"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ug5-cr-WyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

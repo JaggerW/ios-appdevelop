@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJk-iM-jla">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJk-iM-jla">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -73,6 +73,9 @@
                                     <state key="normal" title="确定">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="Commit:" destination="0hZ-vw-2ez" eventType="touchUpInside" id="nGC-ld-Nph"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -196,16 +199,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择收货地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbR-f0-Ib9">
-                                                    <rect key="frame" x="80" y="12" width="86" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="Dr2-6f-de9"/>
-                                                        <constraint firstAttribute="width" constant="86" id="ks8-An-Nu7"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="uwh-ff-ApF">
                                                     <rect key="frame" x="296" y="15" width="8" height="15"/>
                                                     <constraints>
@@ -213,14 +206,24 @@
                                                         <constraint firstAttribute="height" constant="15" id="eaG-yb-3H6"/>
                                                     </constraints>
                                                 </imageView>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="添加地址" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4AS-uG-ici">
+                                                    <rect key="frame" x="70" y="6" width="206" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="BCK-OG-yFR"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="uI7-vC-1ER" firstAttribute="leading" secondItem="7Dx-fh-HVB" secondAttribute="leadingMargin" id="86w-is-Lb7"/>
+                                                <constraint firstItem="uwh-ff-ApF" firstAttribute="leading" secondItem="4AS-uG-ici" secondAttribute="trailing" constant="20" id="GnM-ke-6Pv"/>
+                                                <constraint firstItem="4AS-uG-ici" firstAttribute="top" secondItem="7Dx-fh-HVB" secondAttribute="top" constant="6" id="HCA-Qb-Q1L"/>
                                                 <constraint firstItem="uI7-vC-1ER" firstAttribute="top" secondItem="7Dx-fh-HVB" secondAttribute="topMargin" constant="1" id="NYG-md-erU"/>
                                                 <constraint firstItem="uwh-ff-ApF" firstAttribute="top" secondItem="7Dx-fh-HVB" secondAttribute="topMargin" constant="4" id="R3r-je-qdy"/>
-                                                <constraint firstItem="sbR-f0-Ib9" firstAttribute="top" secondItem="7Dx-fh-HVB" secondAttribute="topMargin" constant="1" id="pvU-eD-Gn4"/>
+                                                <constraint firstItem="4AS-uG-ici" firstAttribute="leading" secondItem="uI7-vC-1ER" secondAttribute="trailing" constant="8" id="Yor-b8-x2f"/>
                                                 <constraint firstItem="uwh-ff-ApF" firstAttribute="trailing" secondItem="7Dx-fh-HVB" secondAttribute="trailingMargin" id="q9F-bA-dQA"/>
-                                                <constraint firstItem="sbR-f0-Ib9" firstAttribute="leading" secondItem="uI7-vC-1ER" secondAttribute="trailing" constant="18" id="vMl-yj-3Ma"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -316,10 +319,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="wUW-G2-Vz0"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="4AS-uG-ici" id="DmO-25-ggS"/>
+                        <outlet property="doorLabel" destination="j9O-b0-84J" id="4le-Bb-tcb"/>
+                        <outlet property="nameLabel" destination="TCF-PQ-hGq" id="7nb-Xn-yZJ"/>
+                        <outlet property="openMap" destination="uwh-ff-ApF" id="ckz-KU-r1x"/>
+                        <outlet property="telLabel" destination="J19-1x-kZO" id="qlj-DD-ti8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMr-z9-q4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831" y="85"/>
+            <point key="canvasLocation" x="830.625" y="84.507042253521121"/>
         </scene>
     </scenes>
     <resources>

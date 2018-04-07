@@ -27,9 +27,17 @@ class SetUpTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if(indexPath.section == 0){
-            let vc = UIStoryboard(name: "User", bundle: nil).instantiateInitialViewController() as! UserTableViewController
-            self.navigationItem.backBarButtonItem?.title = "账户与安全"
-            self.navigationController?.pushViewController(vc, animated: true)
+            if USERID != 0{
+                let story = UIStoryboard(name: "User", bundle: nil)
+                let vc = story.instantiateInitialViewController() as! UserTableViewController
+                self.navigationItem.backBarButtonItem?.title = "账户与安全"
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            else{
+                let vc = UIStoryboard(name: "Logon", bundle: nil).instantiateInitialViewController() as! LogonViewController
+                self.navigationItem.backBarButtonItem?.title = "账户与安全"
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
 }

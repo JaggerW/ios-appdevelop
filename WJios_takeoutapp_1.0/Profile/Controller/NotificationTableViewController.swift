@@ -57,7 +57,7 @@ class NotificationTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let orderDetailVc = UIStoryboard(name: "OrderDetail", bundle: nil).instantiateInitialViewController() as! OrderDetailViewController
         //let storeVc = StoreViewController()
-        orderDetailVc.message = indexPath.row
+        orderDetailVc.message = "\(indexPath.row)"
         self.navigationController?.pushViewController(orderDetailVc, animated: true)
     }
     

@@ -9,6 +9,19 @@
 import UIKit
 
 class UserTableViewController: UITableViewController {
+    
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var userTel: UILabel!
+    @IBOutlet weak var userName: UILabel!
+    @IBAction func checkOut(_ sender: Any) {
+        UIAlertController.showConfirm(message: "确定退出吗？") { (_) in
+            USERID = 0
+            //重新刷新界面
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    private let userVM = UserViewModel()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +29,12 @@ class UserTableViewController: UITableViewController {
         //设置ui
         self.tableView.bounces = false
         self.tableView.showsVerticalScrollIndicator = false
+        //
+        userVM.requestData(userId: USERID) {
+            let model = self.userVM.userModel
+            self.userName.text = model.userName
+            self.userTel.text = model.userTel
+        }
         
     }
 

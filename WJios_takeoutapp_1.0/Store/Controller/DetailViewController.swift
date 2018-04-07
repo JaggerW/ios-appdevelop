@@ -12,6 +12,8 @@ private let detailTableViewCellID = "detailTableViewCellID"
 
 class DetailViewController: UIViewController {
     
+    var storeModel = StoreListModel()
+    
     //MARK:- 懒加载
     private lazy var detailTableView: UITableView = { [weak self] in
         let rect = CGRect(x: 0, y: 0, width: (self?.view.frame.width)!, height: (self?.view.frame.height)!)
@@ -35,7 +37,15 @@ class DetailViewController: UIViewController {
     }()
     
     private lazy var detailLabels: [[String]] = {
-        let detailLabels = [["距离99米，配送费为¥5","9：00 -- 21：30","人民币15"],["满30减20","满50减30"],["这是一家有简介的商家","这是一家有公告的商家","13245678900","这是一家有地址的商家","9：00 -- 21：30","这是一家有营业许可的商家"]]
+        let array_1 = ["距离\(storeModel.storeDistance)米，配送费为¥\(storeModel.deliveryCost)",
+        "\(storeModel.sendStartTime)--\(storeModel.sentEndTime)","¥\(storeModel.sendingPrice)"]
+        let array_2 = [storeModel.storeActivityTip1,storeModel.storeActivityTip2]
+        let array_3 = [storeModel.briefIntroduction,storeModel.storeNotice,storeModel.storeTel,
+                       storeModel.storeAddress,array_1[1],"许可证号:" + storeModel.storeQualification]
+        var detailLabels = [[String]]()
+        detailLabels.append(array_1)
+        detailLabels.append(array_2)
+        detailLabels.append(array_3)
         return detailLabels
     }()
 
@@ -58,6 +68,7 @@ class DetailViewController: UIViewController {
 //MARK:- 设置UI
 extension DetailViewController{
     private func setupUI(){
+        
         self.view.addSubview(detailTableView)
     }
 }
@@ -93,6 +104,7 @@ extension DetailViewController: UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: detailTableViewCellID, for: indexPath) as! DetailTableViewCell
         cell.nameLabel.text = nameLabels[indexPath.section][indexPath.row]
         cell.detailLabel.text = detailLabels[indexPath.section][indexPath.row]
+        
         if (indexPath.section == 0) && (indexPath.row == 0){
             cell.nameLabel.backgroundColor = UIColor(r: 97, g: 166, b: 255)
             cell.nameLabel.textAlignment = .center

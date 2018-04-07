@@ -23,7 +23,20 @@ class ProfileTableHeaderView: UIView {
     //MARK:- 定义属性
     
     @IBOutlet var view: UIView!
+    
+    @IBOutlet weak var userName: UILabel!
+    
+    @IBOutlet weak var userTel: UILabel!
+    
+    @IBOutlet weak var userImage: UIImageView!
     weak var delegate: ProfileTableHeaderDelegate?
+    
+    var model = UserModel(){
+        didSet{
+            userName.text = model.userName
+            userTel.text = model.userTel
+        }
+    }
     
     //MARK:- 懒加载
     //collectionview

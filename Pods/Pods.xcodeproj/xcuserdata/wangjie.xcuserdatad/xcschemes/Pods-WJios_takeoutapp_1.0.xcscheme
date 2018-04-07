@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DBF72D87C55467FD1980D6A49B83B8C6"
+               BlueprintIdentifier = "C6995A2106EC87299C93664C2EA13889"
                BuildableName = "Pods_WJios_takeoutapp_1_0.framework"
                BlueprintName = "Pods-WJios_takeoutapp_1.0"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DBF72D87C55467FD1980D6A49B83B8C6"
+            BlueprintIdentifier = "C6995A2106EC87299C93664C2EA13889"
             BuildableName = "Pods_WJios_takeoutapp_1_0.framework"
             BlueprintName = "Pods-WJios_takeoutapp_1.0"
             ReferencedContainer = "container:Pods.xcodeproj">

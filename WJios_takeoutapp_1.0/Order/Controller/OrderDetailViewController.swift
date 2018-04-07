@@ -17,7 +17,10 @@ private let headerViewH: CGFloat = 160
 class OrderDetailViewController: UIViewController {
     
     //定义属性
-    var message:Int = 0
+    var message: String = ""
+    var orderModel = OrderModel()
+    //private lazy var orderVM : OrderViewModel = OrderViewModel()
+    //private lazy var orderDetailVM: OrderDetailViewModel = OrderDetailViewModel()
     
     //MARK:- 懒加载
     private lazy var collectionCell:OrderDetailCollectionViewCell = {
@@ -57,8 +60,10 @@ class OrderDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         //设置ui
         setupUI()
+        
         
     }
 
@@ -75,19 +80,32 @@ extension OrderDetailViewController{
 }
 
 //MARK:- 添加delegate和DataSource
-extension OrderDetailViewController: UICollectionViewDelegate,UICollectionViewDataSource{
+extension OrderDetailViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     //3个item
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 2
     }
     //设置collectionviewcell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //获取cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: orderDetailCollectionViewCellID, for: indexPath) as! OrderDetailCollectionViewCell
+        //对cell进行赋值
         cell.sectionNum = indexPath.row
+        cell.orderModel = orderModel
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath.row == 0{
+            let size = CGSize(width: kScreenW - 2 * kGapW, height: CGFloat(35 + 44 * (orderModel.goodsList.count + 2) + 30))
+            return size
+        }
+        else {
+            let size = CGSize(width: kScreenW - 2 * kGapW, height: CGFloat(35 + 44 * 6 + 30))
+            return size
+        }
     }
     //设置headerview
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -107,9 +125,22 @@ extension OrderDetailViewController: OrderDetailHeaderDelegate{
         let vc = storyBoard.instantiateInitialViewController()!
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
     func ClickCommentButton(headerView: OrderDetailHeaderView) {
-        let vc = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "CommentStoryBoardID")
-        self.navigationController?.pushViewController(vc, animated: true)
+        if orderModel.orderStatus == 1{
+            if orderModel.commentFlag == 0{
+                let vc = UIStoryboard(name: "Store", bundle: nil).instantiateViewController(withIdentifier: "CommentStoryBoardID") as! CommentCaseViewController
+                vc.orderModel = orderModel
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            else{
+                UIAlertController.showStatus(message: "您已评论过该订单，不可重复评论")
+            }
+        }
+        else {
+            UIAlertController.showStatus(message: "该订单未完成!")
+        }
     }
 
 }

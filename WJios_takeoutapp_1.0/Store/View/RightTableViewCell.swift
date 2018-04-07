@@ -7,22 +7,62 @@
 //
 
 import UIKit
+import Kingfisher
 
 protocol OrderFoodDelegate : class {
-    func ClickAddButton(tableViewCell: RightTableViewCell,goodsNum: Int,goodsPrice: Int,foodName: String)
-    func ClickSubButton(tableViewCell: RightTableViewCell,goodsNum: Int,goodsPrice: Int)
+    func ClickTheButton(tableViewCell: RightTableViewCell,goodsNum: Int,section : Int,row : Int,tag: Bool)
 }
 
 class RightTableViewCell: UITableViewCell {
 
     @IBOutlet weak var foodNameLabel: UILabel!
+    @IBOutlet weak var foodPrice: UILabel!
+    @IBOutlet weak var salesAmount: UILabel!
+    @IBOutlet weak var foodImage: UIImageView!
+    
     @IBOutlet weak var foodNumLabel: UILabel!
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var subBtn: UIButton!
     
-    var numArray = [[0,0,0,0,0],[0,0,0],[0,0,0,0,0,0,0,0],[0,0,0],[0,0,0],[0,0]]
-    
+    //商品数量
+    var num : Int = 0{
+        didSet{
+            if num == 0{
+                foodNumLabel.text = "0"
+                foodNumLabel.isHidden = true
+                subBtn.isHidden = true
+                subBtn.isEnabled = false
+            }
+            else{
+                foodNumLabel.text = String(num)
+                foodNumLabel.isHidden = false
+                subBtn.isHidden = false
+                subBtn.isEnabled = true
+            }
+        }
+    }
+    //定义代理
     weak var delegate:OrderFoodDelegate?
+    //定义商品模型
+    var goods : GoodsModel?{
+        didSet{
+            guard let goods = goods else {return}
+            
+            foodNameLabel.text = goods.goodsName
+            let price = goods.goodsPrice
+            if price - Float(Int(price)) == 0.0{
+                foodPrice.text = "\(Int(price))"
+            }
+            else{
+                foodPrice.text = "\(goods.goodsPrice)"
+            }
+            salesAmount.text = "月销售\(goods.goodsSalesAmount)份"
+            num = goods.orderCount
+            //显示商铺图片
+            guard let foodIconURL = URL(string: goods.goodsImage) else {return}
+            foodImage.kf.setImage(with: foodIconURL)
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,49 +81,22 @@ class RightTableViewCell: UITableViewCell {
     
     
     @IBAction func clickAdd(_ sender: Any) {
-        let tag = addBtn.tag
-        let section = tag / 10
-        let row = tag % 10
-        
-        var num:Int = numArray[section][row]
-        
+        let tag: Int = addBtn.tag
+        let section: Int = tag / 10
+        let row: Int = tag % 10
         num += 1
-        if num == 1{
-            //foodNumLabel.text = "1"
-            foodNumLabel.isHidden = false
-            subBtn.isEnabled = true
-            subBtn.isHidden = false
-        }
-        
-        foodNumLabel.text = String(num)
-        numArray[section][row] = num
-        print(foodNumLabel.text!)
-        print(addBtn.tag)
-        
         //通知代理
-        self.delegate?.ClickAddButton(tableViewCell: self, goodsNum: num, goodsPrice: 15, foodName: foodNameLabel.text!)
+        self.delegate?.ClickTheButton(tableViewCell: self, goodsNum: num, section: section, row: row, tag: true)
     }
     
     
     @IBAction func clickSub(_ sender: Any) {
-        let tag = addBtn.tag
-        let section = tag / 10
-        let row = tag % 10
-        
-        var num:Int = numArray[section][row]
-        if num == 1{
-            //foodNumLabel.text = "1"
-            foodNumLabel.isHidden = true
-            subBtn.isEnabled = false
-            subBtn.isHidden = true
-        }
+        let tag: Int = addBtn.tag
+        let section: Int = tag / 10
+        let row: Int = tag % 10
         num -= 1
-        foodNumLabel.text = String(num)
-        numArray[section][row] = num
-        print(foodNumLabel.text!)
-        print(subBtn.tag)
         //通知代理
-        self.delegate?.ClickSubButton(tableViewCell: self, goodsNum: num, goodsPrice: 15)
+        self.delegate?.ClickTheButton(tableViewCell: self, goodsNum: num, section: section, row: row, tag: false)
     }
     
 }

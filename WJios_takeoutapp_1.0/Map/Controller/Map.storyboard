@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="StE-aj-owg">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="4Uk-9n-EqE">
+            <objects>
+                <viewController id="StE-aj-owg" customClass="MapViewController" customModule="WJios_takeoutapp_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rck-OS-bYx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_map_cell_current_location" translatesAutoresizingMaskIntoConstraints="NO" id="bEg-uf-blc">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2qE-d2-uEe"/>
+                                    <constraint firstAttribute="height" constant="20" id="oOJ-7B-C29"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rS-Ch-jbA">
+                                <rect key="frame" x="124" y="240" width="72" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Po2-Sh-UZM"/>
+                                    <constraint firstAttribute="width" constant="72" id="aVc-cN-dj3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="我的位置" backgroundImage="address_locate_content_bg"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCm-UH-zH1">
+                                <rect key="frame" x="10" y="513" width="300" height="45"/>
+                                <color key="backgroundColor" red="0.31853214330473018" green="0.92790291878172593" blue="0.40373221633280676" alpha="0.97525149828767121" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Xwh-pI-q4B"/>
+                                </constraints>
+                                <state key="normal" title="确认"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="commit:" destination="StE-aj-owg" eventType="touchUpInside" id="m6x-7J-4cw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7K-eU-OIM">
+                                <rect key="frame" x="10" y="466" width="300" height="37"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="cUU-Ue-F7k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="当前位置" image="address_map_cell_current_location">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bEg-uf-blc" firstAttribute="centerY" secondItem="Rck-OS-bYx" secondAttribute="centerY" id="58G-xv-c7B"/>
+                            <constraint firstItem="bEg-uf-blc" firstAttribute="top" secondItem="4rS-Ch-jbA" secondAttribute="bottom" id="8DD-ub-roJ"/>
+                            <constraint firstItem="flC-Ph-qo2" firstAttribute="trailing" secondItem="mCm-UH-zH1" secondAttribute="trailing" constant="10" id="GJI-HH-dA3"/>
+                            <constraint firstItem="bEg-uf-blc" firstAttribute="centerX" secondItem="Rck-OS-bYx" secondAttribute="centerX" id="Nsf-un-mLL"/>
+                            <constraint firstItem="flC-Ph-qo2" firstAttribute="bottom" secondItem="mCm-UH-zH1" secondAttribute="bottom" constant="10" id="Zx9-GC-bPi"/>
+                            <constraint firstItem="g7K-eU-OIM" firstAttribute="leading" secondItem="flC-Ph-qo2" secondAttribute="leading" constant="10" id="bIy-0G-2WN"/>
+                            <constraint firstItem="mCm-UH-zH1" firstAttribute="leading" secondItem="flC-Ph-qo2" secondAttribute="leading" constant="10" id="fRl-Z3-YxT"/>
+                            <constraint firstItem="4rS-Ch-jbA" firstAttribute="centerX" secondItem="Rck-OS-bYx" secondAttribute="centerX" id="fZS-43-qmA"/>
+                            <constraint firstItem="mCm-UH-zH1" firstAttribute="top" secondItem="g7K-eU-OIM" secondAttribute="bottom" constant="10" id="gUs-93-cvQ"/>
+                            <constraint firstItem="flC-Ph-qo2" firstAttribute="trailing" secondItem="g7K-eU-OIM" secondAttribute="trailing" constant="10" id="uth-4X-rn1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="flC-Ph-qo2"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="4rS-Ch-jbA" id="uNk-gU-FKW"/>
+                        <outlet property="commitBtn" destination="mCm-UH-zH1" id="0ME-Ym-NTR"/>
+                        <outlet property="image" destination="bEg-uf-blc" id="29a-6z-WfC"/>
+                        <outlet property="labelBtn" destination="g7K-eU-OIM" id="fJg-Iw-5n1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTs-qj-fnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196.875" y="193.30985915492957"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="address_locate_content_bg" width="72" height="34"/>
+        <image name="address_map_cell_current_location" width="20" height="20"/>
+    </resources>
+</document>

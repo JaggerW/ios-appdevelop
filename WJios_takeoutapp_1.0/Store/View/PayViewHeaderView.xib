@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="payViewHeaderViewID" id="z02-L4-pde" customClass="PayViewHeaderView" customModule="WJios_takeoutapp_1_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_scene_order_default" translatesAutoresizingMaskIntoConstraints="NO" id="ykh-ON-Hq7">
+                    <rect key="frame" x="130" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="gvz-Ta-mAi"/>
+                        <constraint firstAttribute="width" constant="60" id="reN-gI-CRU"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLK-RN-nh8">
+                    <rect key="frame" x="20.5" y="78" width="280" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="ZKL-3y-7WN"/>
+                        <constraint firstAttribute="height" constant="22" id="odK-zF-s4A"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="配送地址：默认地址">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="ChooseAddress:" destination="z02-L4-pde" eventType="touchUpInside" id="b8F-8K-L46"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0c-Ia-QRm">
+                    <rect key="frame" x="128.5" y="108" width="63" height="21"/>
+                    <color key="backgroundColor" red="0.3788931257" green="0.65214036129999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="Pcv-iZ-OKC"/>
+                        <constraint firstAttribute="height" constant="21" id="a0P-bT-QDo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="去支付">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="Pay:" destination="z02-L4-pde" eventType="touchUpInside" id="2D3-DN-Nj3"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-Cz-vCa">
+                    <rect key="frame" x="0.0" y="150" width="320" height="10"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="rYw-Sy-kym"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="C0c-Ia-QRm" firstAttribute="centerX" secondItem="z02-L4-pde" secondAttribute="centerX" id="3R3-jo-uGB"/>
+                <constraint firstItem="C0c-Ia-QRm" firstAttribute="top" secondItem="jLK-RN-nh8" secondAttribute="bottom" constant="8" id="4mn-Mr-TDN"/>
+                <constraint firstItem="jLK-RN-nh8" firstAttribute="centerX" secondItem="z02-L4-pde" secondAttribute="centerX" id="B7L-GD-hwV"/>
+                <constraint firstItem="aeC-Cz-vCa" firstAttribute="leading" secondItem="Kx7-5r-Jqm" secondAttribute="leading" id="F0W-lC-2z6"/>
+                <constraint firstItem="Kx7-5r-Jqm" firstAttribute="trailing" secondItem="aeC-Cz-vCa" secondAttribute="trailing" id="YoY-4m-GOw"/>
+                <constraint firstItem="jLK-RN-nh8" firstAttribute="top" secondItem="ykh-ON-Hq7" secondAttribute="bottom" constant="8" id="nU5-J4-mIu"/>
+                <constraint firstItem="ykh-ON-Hq7" firstAttribute="top" secondItem="Kx7-5r-Jqm" secondAttribute="top" constant="10" id="oRL-Cw-fAs"/>
+                <constraint firstItem="aeC-Cz-vCa" firstAttribute="top" secondItem="C0c-Ia-QRm" secondAttribute="bottom" constant="21" id="p1I-aq-bIm"/>
+                <constraint firstItem="ykh-ON-Hq7" firstAttribute="centerX" secondItem="z02-L4-pde" secondAttribute="centerX" id="pEa-SR-s4v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Kx7-5r-Jqm"/>
+            <connections>
+                <outlet property="addressLabel" destination="jLK-RN-nh8" id="Mi1-1v-Rqd"/>
+                <outlet property="storeImage" destination="ykh-ON-Hq7" id="q0A-1z-H5U"/>
+            </connections>
+            <point key="canvasLocation" x="13" y="-63"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_icon_scene_order_default" width="26" height="26"/>
+    </resources>
+</document>

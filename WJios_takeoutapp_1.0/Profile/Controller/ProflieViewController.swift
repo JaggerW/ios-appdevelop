@@ -26,12 +26,22 @@ class ProflieViewController: UITableViewController {
     private lazy var headerView: ProfileTableHeaderView = {
         let rect = CGRect(x: 0, y: 0, width: kScreenW, height: headerViewH)
         let headerView = ProfileTableHeaderView(frame: rect)
+        if USERID != 0{
+            userVM.requestData(userId: USERID, finishedCallback: {
+                let model = self.userVM.userModel
+                headerView.model = model
+            })
+        }
+        else{
+            headerView.userTel.text = ""
+            headerView.userName.text = "请登录"
+        }
         //设置代理
         headerView.delegate = self
         
         return headerView
     }()
-    
+    private let userVM : UserViewModel = UserViewModel()
     //MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +59,20 @@ class ProflieViewController: UITableViewController {
         
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if USERID != 0{
+            userVM.requestData(userId: USERID, finishedCallback: {
+                let model = self.userVM.userModel
+                self.headerView.model = model
+            })
+        }
+        else{
+            headerView.userTel.text = ""
+            headerView.userName.text = "请登录"
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -125,9 +149,18 @@ extension ProflieViewController{
 extension ProflieViewController: ProfileTableHeaderDelegate{
     
     func ClickHeader(headerView: ProfileTableHeaderView) {
-        let story = UIStoryboard(name: "User", bundle: nil)
-        let vc = story.instantiateInitialViewController() as! UserTableViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        if USERID != 0{
+            let story = UIStoryboard(name: "User", bundle: nil)
+            let vc = story.instantiateInitialViewController() as! UserTableViewController
+            self.navigationItem.backBarButtonItem?.title = "账户与安全"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        else{
+            let vc = UIStoryboard(name: "Logon", bundle: nil).instantiateInitialViewController() as! LogonViewController
+            self.navigationItem.backBarButtonItem?.title = "账户与安全"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
     
     func SelectItem(headerView: ProfileTableHeaderView, Index: Int, Num: String) {
@@ -137,17 +170,19 @@ extension ProflieViewController: ProfileTableHeaderDelegate{
             let story = UIStoryboard(name: "Wallet", bundle: nil)
             let vc = story.instantiateInitialViewController() as! WalletViewController
             vc.num = Num
-            
+            self.navigationItem.backBarButtonItem?.title = "钱包"
             self.navigationController?.pushViewController(vc, animated: true)
         case 1:
             print(Num)
             let vc = DiscountViewController()
             let num = Int(Num)
             vc.count = num!
+            self.navigationItem.backBarButtonItem?.title = "红包"
             self.navigationController?.pushViewController(vc, animated: true)
         case 2:
             print(Num)
             let vc = CreditsViewController()
+            self.navigationItem.backBarButtonItem?.title = "积分"
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("还没完成")

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,7 +27,7 @@
                             <constraint firstAttribute="width" constant="60" id="pKb-qX-qqb"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配送时效" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRs-xg-GXy">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00--21:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRs-xg-GXy">
                         <rect key="frame" x="10" y="77" width="60" height="10"/>
                         <color key="backgroundColor" red="0.35429667403389559" green="0.98227315989847719" blue="0.38842569405602861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -91,7 +91,7 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="起送价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy1-ep-1qR">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15元起送" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy1-ep-1qR">
                         <rect key="frame" x="78" y="63" width="44" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="472-79-9dB"/>
@@ -102,17 +102,17 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTj-JR-4BQ" userLabel="Vline">
-                        <rect key="frame" x="122" y="63" width="1" height="14"/>
+                        <rect key="frame" x="124" y="63" width="1" height="14"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="AUe-x1-Yqs"/>
                             <constraint firstAttribute="width" constant="1" id="n9P-wQ-UyG"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配送费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-oT-cLw">
-                        <rect key="frame" x="128" y="63" width="42" height="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配送费2.5元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-oT-cLw">
+                        <rect key="frame" x="130" y="63" width="84" height="14"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="42" id="0Bx-Hv-cqs"/>
+                            <constraint firstAttribute="width" constant="84" id="0Bx-Hv-cqs"/>
                             <constraint firstAttribute="height" constant="14" id="bXn-Si-Ly8"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
@@ -120,10 +120,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离99m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-A8-1JN">
-                        <rect key="frame" x="262" y="63" width="48" height="14"/>
+                        <rect key="frame" x="226" y="63" width="84" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="2aF-sZ-uoz"/>
-                            <constraint firstAttribute="width" constant="48" id="qkg-H7-DTL"/>
+                            <constraint firstAttribute="width" constant="84" id="qkg-H7-DTL"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
                         <nil key="textColor"/>
@@ -200,7 +200,7 @@
                     <constraint firstItem="Nk4-iZ-8aK" firstAttribute="top" secondItem="VHb-r4-Hct" secondAttribute="bottom" constant="5" id="gYP-uY-ri3"/>
                     <constraint firstItem="TTj-JR-4BQ" firstAttribute="top" secondItem="Nk4-iZ-8aK" secondAttribute="bottom" constant="8" id="iKH-mR-WwP"/>
                     <constraint firstAttribute="trailingMargin" secondItem="EzT-8x-wuk" secondAttribute="trailing" constant="10" id="iSv-1z-LkU"/>
-                    <constraint firstItem="TTj-JR-4BQ" firstAttribute="leading" secondItem="am6-GB-sQS" secondAttribute="trailing" constant="52" id="iTZ-rF-2Uo"/>
+                    <constraint firstItem="TTj-JR-4BQ" firstAttribute="leading" secondItem="am6-GB-sQS" secondAttribute="trailing" constant="54" id="iTZ-rF-2Uo"/>
                     <constraint firstItem="VHb-r4-Hct" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="lRP-GM-3HG"/>
                     <constraint firstItem="am6-GB-sQS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="loK-m3-nbk"/>
                     <constraint firstItem="2Bz-dF-VVh" firstAttribute="top" secondItem="mET-Yr-e63" secondAttribute="bottom" constant="8" id="m0B-7q-n1L"/>

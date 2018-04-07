@@ -15,6 +15,7 @@ protocol OrderDetailHeaderDelegate : class {
 
 class OrderDetailHeaderView: UICollectionReusableView {
     
+    
     weak var delegate : OrderDetailHeaderDelegate?
 
     

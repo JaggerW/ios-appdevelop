@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailTableFooterView" customModule="WJios_takeoutapp_1_0" customModuleProvider="target">
             <connections>
+                <outlet property="btn" destination="Afr-YY-Dzh" id="hUB-4X-DFW"/>
+                <outlet property="label" destination="xZk-6P-rl2" id="pK6-uk-bGh"/>
+                <outlet property="totalCost" destination="3b4-hj-pmg" id="Ubw-TR-aGd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="I00-yM-rVq"/>
             </connections>
         </placeholder>
@@ -28,19 +31,22 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="联系商家"/>
+                    <connections>
+                        <action selector="ClickTheBtn:" destination="-1" eventType="touchUpInside" id="tNa-zv-HS7"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥15" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-hj-pmg">
-                    <rect key="frame" x="275" y="5" width="29" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥255.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-hj-pmg">
+                    <rect key="frame" x="254" y="5" width="54" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="4dZ-jO-aP5"/>
-                        <constraint firstAttribute="width" constant="29" id="Qak-bs-xdy"/>
+                        <constraint firstAttribute="width" constant="54" id="Qak-bs-xdy"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.97156567260000004" green="0.27045239920000003" blue="0.084632118539999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-6P-rl2">
-                    <rect key="frame" x="243" y="6" width="31" height="21"/>
+                    <rect key="frame" x="222" y="6" width="31" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="bIT-ze-qiM"/>
                         <constraint firstAttribute="width" constant="31" id="w91-R1-1OE"/>
@@ -54,7 +60,7 @@
             <constraints>
                 <constraint firstItem="xZk-6P-rl2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="O3u-kQ-zGz"/>
                 <constraint firstItem="3b4-hj-pmg" firstAttribute="leading" secondItem="xZk-6P-rl2" secondAttribute="trailing" constant="1" id="XeY-2F-2zO"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3b4-hj-pmg" secondAttribute="trailing" constant="16" id="eB5-zY-Ur8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3b4-hj-pmg" secondAttribute="trailing" constant="12" id="eB5-zY-Ur8"/>
                 <constraint firstItem="3b4-hj-pmg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="gMw-7Q-rin"/>
                 <constraint firstItem="Afr-YY-Dzh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nmf-7V-Gaj"/>
                 <constraint firstItem="Afr-YY-Dzh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="scY-EK-gof"/>

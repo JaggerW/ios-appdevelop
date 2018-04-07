@@ -12,6 +12,12 @@ class CommentHeaderView: UIView {
 
     @IBOutlet var view: UIView!
     
+    @IBOutlet weak var totalPoint: UILabel!
+    
+    @IBOutlet weak var goodsPoint: UILabel!
+    
+    @IBOutlet weak var salesAmount: UILabel!
+    
     //MARK:- 自定义初始化函数
     override init(frame: CGRect) {
         super.init(frame: frame)

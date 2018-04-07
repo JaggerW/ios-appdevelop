@@ -8,5 +8,7 @@ target 'WJios_takeoutapp_1.0' do
   # Pods for WJios_takeoutapp_1.0
 
   pod 'SnapKit'
+  pod 'Alamofire'
+  pod 'Kingfisher'
 
 end

@@ -26,4 +26,10 @@ class LeftTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    var group : GoodsGroup?{
+        didSet {
+            label.text = group?.categoryName
+        }
+    }
+    
 }

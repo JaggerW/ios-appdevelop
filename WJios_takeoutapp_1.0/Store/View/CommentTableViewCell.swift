@@ -13,7 +13,21 @@ class CommentTableViewCell: UITableViewCell {
     //MARK:- 定义outlet属性
     @IBOutlet weak var ImageContentView: UIView!
     
+    @IBOutlet weak var userImage: UIImageView!
     
+    @IBOutlet weak var userName: UILabel!
+    
+    @IBOutlet weak var comments: UILabel!
+    
+    @IBOutlet weak var commentTime: UILabel!
+    
+    var model : CommentModel = CommentModel(){
+        didSet{
+            userName.text = model.userName
+            comments.text = model.comments
+            commentTime.text = model.commitTime
+        }
+    }
     
     //MARK:- 系统回调函数
     override func awakeFromNib() {

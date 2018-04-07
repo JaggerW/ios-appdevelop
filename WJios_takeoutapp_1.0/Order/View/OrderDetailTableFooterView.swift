@@ -11,6 +11,9 @@ import UIKit
 class OrderDetailTableFooterView: UIView {
 
     @IBOutlet var view: UIView!
+    @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var totalCost: UILabel!
+    @IBOutlet weak var label: UILabel!
     //MARK:- 自定义初始化函数
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,6 +24,8 @@ class OrderDetailTableFooterView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    @IBAction func ClickTheBtn(_ sender: Any) {
     }
     
 }

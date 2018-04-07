@@ -13,6 +13,12 @@ var count :Int = 0
 
 class ShopCartView: UIView {
     
+    @IBOutlet var tableView: UITableView!
+    
+    @IBOutlet weak var headerView: UIView!
+    
+    @IBAction func emptyOrderArray(_ sender: Any) {
+    }
     //懒加载poptableview
     private lazy var popTableView: UITableView = {
         let rect = CGRect(x: 0, y: self.bounds.height, width: self.bounds.width, height: 320)
@@ -29,11 +35,14 @@ class ShopCartView: UIView {
         tableView.register(nib, forCellReuseIdentifier: goodsListTableViewCellID)
         return tableView
     }()
-
+    
+    
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        initViewFromNib()
+        
         
         //设置UI
         setupUI()
@@ -80,6 +89,16 @@ extension ShopCartView:UITableViewDelegate,UITableViewDataSource{
     }
     
     
+}
+
+extension ShopCartView{
+    private func initViewFromNib(){
+        let bundle = Bundle(for: type(of:self))
+        let nib = UINib(nibName: "ShopCartView", bundle: bundle)
+        self.tableView = nib.instantiate(withOwner: self, options: nil)[0] as! UITableView
+        self.tableView.frame = bounds
+        self.addSubview(tableView)
+    }
 }
 
 //MARK:- 对外暴露方法
